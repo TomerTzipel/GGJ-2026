@@ -1,0 +1,4 @@
+public class MeleeEnemy : BaseEnemy
+{
+
+}
