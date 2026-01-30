@@ -91,9 +91,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RangeEnemy
   playerPosition: {fileID: 11400000, guid: a47d3aa0e7e795e4780f32849526e6ef, type: 2}
-  _myEnemyType: 0
-  _moveSpeed: 3
-  _attackRange: 2
-  _attackCooldown: 0.75
-  _attackDamage: 8
-  _maxHealth: 30
+  _myEnemyType: 1
+  _moveSpeed: 7
+  _attackRange: 4
+  _attackCooldown: 5.3
+  _attackDamage: 10
+  _maxHealth: 18

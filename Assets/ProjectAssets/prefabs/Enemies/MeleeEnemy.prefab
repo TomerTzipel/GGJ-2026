@@ -49,8 +49,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MeleeEnemy
   playerPosition: {fileID: 11400000, guid: a47d3aa0e7e795e4780f32849526e6ef, type: 2}
   _myEnemyType: 0
-  _moveSpeed: 3
-  _attackRange: 2
+  _moveSpeed: 9
+  _attackRange: 0
   _attackCooldown: 0.75
   _attackDamage: 8
   _maxHealth: 30
