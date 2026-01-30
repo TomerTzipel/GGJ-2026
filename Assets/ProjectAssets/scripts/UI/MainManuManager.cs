@@ -6,16 +6,18 @@ using UnityEngine.UI;
 public class MainManuManager : MonoBehaviour
 {
     [SerializeField] private Button button;
-    [SerializeField] private Image frame;
-
+    
+    public GameObject MainMenuFrame;
+    public GameObject SettingsFrame;
     public void StartButton()
     {
         SceneManager.LoadScene("Game Scene");
     }
     
-    public void SettingsButton()
+    public void SettingsButton(bool isSettingActive)
     {
-        frame.gameObject.SetActive(false);
+        MainMenuFrame.SetActive(!isSettingActive);
+        SettingsFrame.SetActive(isSettingActive);
     }
 
     public void QuitButton()
