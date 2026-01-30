@@ -40,7 +40,7 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField] private AudioClip musicIntro;
     [SerializeField] private AudioClip musicNoIntro;
-    [SerializeField]  private AudioClip test;
+
     private InputActions input;
     private void Awake()
     {

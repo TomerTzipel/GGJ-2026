@@ -235,7 +235,6 @@ MonoBehaviour:
   spellLeaf: {fileID: 8300000, guid: 38d0a7a957f5a794a82dc9e654cc89c3, type: 3}
   musicIntro: {fileID: 8300000, guid: fcc7878c2dead744da81dfdc02c685b3, type: 3}
   musicNoIntro: {fileID: 8300000, guid: 6a5dbaa22cbb4174a9705b5aa5ea9bb3, type: 3}
-  test: {fileID: 8300000, guid: 95eeac87690a12c428e2750e4b14a046, type: 3}
 --- !u!4 &223225573
 Transform:
   m_ObjectHideFlags: 0
@@ -880,6 +879,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6319243395910236617, guid: 400737ad80502914aab71fa8ce4d1d7b, type: 3}
+    - target: {fileID: 8828903119689360000, guid: 7bf406ca9bb82f7408b819fe72960210, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8828903119689360000, guid: 7bf406ca9bb82f7408b819fe72960210, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8828903119689360000, guid: 7bf406ca9bb82f7408b819fe72960210, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8828903119689360000, guid: 7bf406ca9bb82f7408b819fe72960210, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
