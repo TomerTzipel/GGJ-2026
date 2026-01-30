@@ -22,10 +22,10 @@ public class CooldownHandler : MonoBehaviour
     {
         maskChangedEC.OnEvent -= HandleMaskChanged;
     }
-
+[ContextMenu("HandleMaskChanged")]
     private void Start()
     {
-        StartCooldown(5);
+        StartCooldown(90);
     }
     //↑ just to test ↑
 

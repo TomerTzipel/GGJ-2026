@@ -1,9 +1,17 @@
+using System;
+using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField]private AudioSource audioSource;
-    
+    [FormerlySerializedAs("audioSource")] [SerializeField]
+    private AudioSource audioSourceSFX;
+
+    [SerializeField] private AudioSource audioSourceMusic;
+
     [SerializeField] private AudioClip dash;
     [SerializeField] private AudioClip doorOpen;
     [SerializeField] private AudioClip enemyFire;
@@ -30,124 +38,148 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip spellIce;
     [SerializeField] private AudioClip spellLeaf;
 
+    [SerializeField] private AudioClip musicIntro;
+    [SerializeField] private AudioClip musicNoIntro;
+    [SerializeField]  private AudioClip test;
+    private InputActions input;
+    private void Awake()
+    {
+        input = new InputActions();
+        StartCoroutine(PlayMusic());
+        input.Player.Interact.Enable();
+        input.Player.Interact.performed  += NewMethod;
+    }
+    private void NewMethod(InputAction.CallbackContext context)
+    {
+        Debug.Log("NewMethod");
+        audioSourceMusic.time = audioSourceMusic.clip.length - 3;
+    }
+
     void DashSound()
     {
-        audioSource.PlayOneShot(dash);
+        audioSourceSFX.PlayOneShot(dash);
     }
-    
+
     void DoorOpenSound()
     {
-        audioSource.PlayOneShot(doorOpen);
+        audioSourceSFX.PlayOneShot(doorOpen);
     }
 
     void MaskChangeSound()
     {
-        audioSource.PlayOneShot(maskChange);
+        audioSourceSFX.PlayOneShot(maskChange);
     }
 
     void PlayerDeadSound()
     {
-        audioSource.PlayOneShot(playerDead);
+        audioSourceSFX.PlayOneShot(playerDead);
     }
 
     void EnemyFireSound()
     {
-        audioSource.PlayOneShot(enemyFire);
+        audioSourceSFX.PlayOneShot(enemyFire);
     }
 
     void EnemyIceSound()
     {
-        audioSource.PlayOneShot(enemyIce);
+        audioSourceSFX.PlayOneShot(enemyIce);
     }
 
     void EnemyLeafSound()
     {
-        audioSource.PlayOneShot(enemyLeaf);
+        audioSourceSFX.PlayOneShot(enemyLeaf);
     }
-    
+
     void ExplosionFireSound()
     {
-        audioSource.PlayOneShot(explosionFire);
+        audioSourceSFX.PlayOneShot(explosionFire);
     }
 
     void ExplosionIceSound()
     {
-        audioSource.PlayOneShot(explosionIce);
+        audioSourceSFX.PlayOneShot(explosionIce);
     }
 
     void ExplosionLeafSound()
     {
-        audioSource.PlayOneShot(explosionLeaf);
+        audioSourceSFX.PlayOneShot(explosionLeaf);
     }
-    
+
     void PunchFireSound()
     {
-        audioSource.PlayOneShot(punchFire);
+        audioSourceSFX.PlayOneShot(punchFire);
     }
 
     void PunchIceSound()
     {
-        audioSource.PlayOneShot(punchIce);
+        audioSourceSFX.PlayOneShot(punchIce);
     }
 
     void PumchLeafSound()
     {
-        audioSource.PlayOneShot(punchLeaf);
+        audioSourceSFX.PlayOneShot(punchLeaf);
     }
-    
+
     [ContextMenu("Play Female Grunt")]
     void FemaleGrunt()
     {
-        int random = Random.Range(0,3);
+        int random = Random.Range(0, 3);
         Debug.Log(random);
         switch (random)
         {
-            case 0 :
-                audioSource.PlayOneShot(femaleGrunt1);
+            case 0:
+                audioSourceSFX.PlayOneShot(femaleGrunt1);
                 break;
-            case 1 :
-                audioSource.PlayOneShot(femaleGrunt2);
+            case 1:
+                audioSourceSFX.PlayOneShot(femaleGrunt2);
                 break;
-            case 2 :
-                audioSource.PlayOneShot(femaleGrunt3);
+            case 2:
+                audioSourceSFX.PlayOneShot(femaleGrunt3);
                 break;
         }
-        //audioSource.PlayOneShot();
     }
 
     void MaleGrunt()
     {
-        int random = Random.Range(0,3);
+        int random = Random.Range(0, 3);
         switch (random)
         {
-            case 0 :
-                audioSource.PlayOneShot(maleGrunt1);
+            case 0:
+                audioSourceSFX.PlayOneShot(maleGrunt1);
                 break;
-            case 1 :
-                audioSource.PlayOneShot(maleGrunt2);
+            case 1:
+                audioSourceSFX.PlayOneShot(maleGrunt2);
                 break;
-            case 2 :
-                audioSource.PlayOneShot(maleGrunt3);
+            case 2:
+                audioSourceSFX.PlayOneShot(maleGrunt3);
                 break;
         }
-        //audioSource.PlayOneShot();
     }
 
     void PlayerGrunt()
     {
-        int random = Random.Range(0,3);
+        int random = Random.Range(0, 3);
         switch (random)
         {
-            case 0 :
-                audioSource.PlayOneShot(playerGrunt1);
+            case 0:
+                audioSourceSFX.PlayOneShot(playerGrunt1);
                 break;
-            case 1 :
-                audioSource.PlayOneShot(playerGrunt2);
+            case 1:
+                audioSourceSFX.PlayOneShot(playerGrunt2);
                 break;
-            case 2 :
-                audioSource.PlayOneShot(playerGrunt3);
+            case 2:
+                audioSourceSFX.PlayOneShot(playerGrunt3);
                 break;
         }
-        //audioSource.PlayOneShot();
     }
+
+    private IEnumerator PlayMusic()
+    {
+        audioSourceMusic.PlayOneShot(musicIntro);
+        yield return new WaitForSecondsRealtime(musicIntro.length);
+            audioSourceMusic.clip = musicNoIntro;
+            audioSourceMusic.loop = true;
+            audioSourceMusic.Play();
+    }
+    
 }
