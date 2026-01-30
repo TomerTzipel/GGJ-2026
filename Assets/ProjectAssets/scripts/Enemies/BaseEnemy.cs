@@ -50,8 +50,8 @@ public class BaseEnemy : MonoBehaviour, IHealthComponent
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            IHealthComponent playerHealth = GetComponent<IHealthComponent>();
-            if (playerHealth != null) playerHealth.TakeDamage(_attackDamage);
+            if (collision.transform.TryGetComponent(out IHealthComponent playerHealth))
+                playerHealth.TakeDamage(_attackDamage);
 
             if (_myEnemyType == EnemyType.Melee) { ChangeState(EnemyState.Idle); }
         }
