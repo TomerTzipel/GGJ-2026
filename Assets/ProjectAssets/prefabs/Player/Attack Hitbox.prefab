@@ -151,3 +151,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef1319b8295eed54885ffb2bcf5edb2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttackHitbox
+  settings: {fileID: 11400000, guid: 3455283ca71e0164fa5c29861e90805b, type: 2}

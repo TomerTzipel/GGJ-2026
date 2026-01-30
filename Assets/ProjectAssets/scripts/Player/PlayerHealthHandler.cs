@@ -1,16 +1,25 @@
 using UnityEngine;
 
-public class PlayerHealthHandler : MonoBehaviour
+public class PlayerHealthHandler : MonoBehaviour,IHealthComponent
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] PlayerSettings settings;
+
+    private int _hp;
+
+    private void Awake()
     {
-        
+        _hp = settings.MaxHP;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void TakeDamage(int damageAmount)
     {
-        
+        Debug.Log($"Player Taking {damageAmount} damage");
+        _hp -= damageAmount;
+        if(_hp <= 0)
+        {
+            //death
+        }
+
+        //UI Update
     }
 }

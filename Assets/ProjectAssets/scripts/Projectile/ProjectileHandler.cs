@@ -7,8 +7,10 @@ public class ProjectileHandler : MonoBehaviour
     [SerializeField] private float lifeTime;
     [SerializeField] private MaskType MaskType;
     [SerializeField] private AOEHandler aoePrefab;
+    [SerializeField] private bool isPlayerProjectile;
+
     public Vector2 MoveDirection { get; set; }
-    public bool IsPlayerProjectile { get; set; }
+    public int Damage { get; set; }
 
     private void Start()
     {
@@ -19,18 +21,21 @@ public class ProjectileHandler : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(moveSpeed);
         transform.Translate(moveSpeed * Time.deltaTime * Vector3.right);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player") && !IsPlayerProjectile)
+        if(collision.CompareTag("Player") && !isPlayerProjectile)
         {
-            //Player Takes Damage
+            if(collision.TryGetComponent(out IHealthComponent health))
+            {
+                health.TakeDamage(Damage);
+            }
+       
         }
 
-        if (collision.CompareTag("Enemy") && IsPlayerProjectile)
+        if (collision.CompareTag("Enemy") && isPlayerProjectile)
         {
             GenerateAOE();        
         }
@@ -44,6 +49,7 @@ public class ProjectileHandler : MonoBehaviour
     private void GenerateAOE()
     {
         Destroy(gameObject);
-        Instantiate(aoePrefab, transform.position,Quaternion.identity);
+        AOEHandler aoe =Instantiate(aoePrefab, transform.position,Quaternion.identity);
+        aoe.Damage = Damage;
     }
 }
