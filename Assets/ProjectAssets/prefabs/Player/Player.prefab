@@ -80,6 +80,7 @@ MonoBehaviour:
   MaskChangeEC: {fileID: 11400000, guid: 30914ee8483595b438920cba3ff76544, type: 2}
   settings: {fileID: 11400000, guid: 3455283ca71e0164fa5c29861e90805b, type: 2}
   hitboxPrefab: {fileID: 4347364786523425202, guid: b930561e4b00b5f4a94a3f897bab97c1, type: 3}
+  projectilePrefab: {fileID: 5052296933026699195, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
   spawnPoint: {fileID: 8294064192372656883}
   mainCamera: {fileID: 0}
   movementHandler: {fileID: 8192920292982810827}
@@ -96,6 +97,7 @@ GameObject:
   - component: {fileID: 8192920292982810827}
   - component: {fileID: 106603656480459839}
   - component: {fileID: 2112255291265977774}
+  - component: {fileID: 3175248277586090083}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -267,6 +269,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3175248277586090083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6708717688995938580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d455c98ea307f5b4bb707cfb77a15e74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealthHandler
+  settings: {fileID: 11400000, guid: 3455283ca71e0164fa5c29861e90805b, type: 2}
 --- !u!1 &7814954744157716911
 GameObject:
   m_ObjectHideFlags: 0

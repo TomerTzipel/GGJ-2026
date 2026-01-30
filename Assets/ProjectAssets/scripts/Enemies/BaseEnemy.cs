@@ -12,7 +12,7 @@ public class BaseEnemy : MonoBehaviour, IHealthComponent
     [SerializeField] private float _moveSpeed = 3f;
     [SerializeField] private float _attackRange = 2f;
     [SerializeField] private float _attackCooldown = 0.75f;
-    [SerializeField] private int _attackDamage = 8;
+    [SerializeField] protected int _attackDamage = 8;
     [SerializeField] private int _maxHealth = 30;
 
     private EnemyState _myCurrentState;
@@ -59,6 +59,7 @@ public class BaseEnemy : MonoBehaviour, IHealthComponent
 
     public void TakeDamage(int damageAmount)
     {
+        Debug.Log($"Enemy Taking {damageAmount} damage");
         int calculatedHP = _currentHealth - damageAmount;
 
         if (calculatedHP <= 0) { _currentHealth = 0; }
