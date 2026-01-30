@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -381,3 +381,4 @@ MonoBehaviour:
   maskImage: {fileID: 6426131080180770519}
   cooldownText: {fileID: 3811775425675250962}
   cooldownImage: {fileID: 1836309763460080813}
+  maskChangedEC: {fileID: 11400000, guid: 30914ee8483595b438920cba3ff76544, type: 2}

@@ -9,8 +9,19 @@ public class CooldownHandler : MonoBehaviour
     [SerializeField]Image maskImage;
     [SerializeField]TMP_Text cooldownText;
     [SerializeField]Image cooldownImage;
+    [SerializeField] MaskTypeEventChannel maskChangedEC;
 
     private float _timeLeft;
+
+    private void OnEnable()
+    {
+        maskChangedEC.OnEvent += HandleMaskChanged;
+    }
+
+    private void OnDisable()
+    {
+        maskChangedEC.OnEvent -= HandleMaskChanged;
+    }
 
     private void Start()
     {
@@ -23,9 +34,10 @@ public class CooldownHandler : MonoBehaviour
         StartCoroutine(Cooldown(cooldown));
     }
     
-    public void MaskTypeUI(MaskType maskType)
+    public void HandleMaskChanged(MaskType maskType)
     {
-        
+        Sprite sprite = MaskSettings.GetSpriteByType(maskType);
+        maskImage.sprite = sprite;
     }
 
     private IEnumerator Cooldown(float cooldown)
