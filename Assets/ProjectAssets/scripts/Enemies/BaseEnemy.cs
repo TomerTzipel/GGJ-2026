@@ -16,18 +16,21 @@ public class BaseEnemy : MonoBehaviour, IHealthComponent
     [SerializeField] private int _maxHealth = 30;
 
     private EnemyState _myCurrentState;
+    private Rigidbody2D _myRigidbody;
     private float _lastAttackTime;
     private int _currentHealth;
 
-    private void Awake() { _currentHealth = _maxHealth; }
+    private void Awake() { _currentHealth = _maxHealth; _myRigidbody = GetComponent<Rigidbody2D>(); }
     private void Start()
     {
         if (playerPosition == null) { ChangeState(EnemyState.Idle); return; }
 
         ChangeState(EnemyState.Chasing);
     }
-    private void Update()
+    private void FixedUpdate()
     {
+        _myRigidbody.linearVelocity = Vector2.zero;
+
         switch (_myCurrentState)
         {
             case EnemyState.Idle:
@@ -48,11 +51,18 @@ public class BaseEnemy : MonoBehaviour, IHealthComponent
         if (collision.gameObject.CompareTag("Player"))
         {
             IHealthComponent playerHealth = GetComponent<IHealthComponent>();
-            if (playerHealth != null)
-                playerHealth.TakeDamage(_attackDamage);
+            if (playerHealth != null) playerHealth.TakeDamage(_attackDamage);
 
             if (_myEnemyType == EnemyType.Melee) { ChangeState(EnemyState.PreparingToAttack); }
         }
+    }
+
+    public void TakeDamage(int damageAmount)
+    {
+        int calculatedHP = _currentHealth - damageAmount;
+
+        if (calculatedHP <= 0) { _currentHealth = 0; }
+        else { _currentHealth = calculatedHP; }
     }
 
     protected virtual void UpdateAttack()
@@ -106,13 +116,5 @@ public class BaseEnemy : MonoBehaviour, IHealthComponent
     protected virtual void ChangeToIdle() { _lastAttackTime = _attackCooldown; }
 
     protected virtual void Die() { Destroy(gameObject); }
-
-    public void TakeDamage(int damageAmount)
-    {
-        int calculatedHP = _currentHealth - damageAmount;
-
-        if (calculatedHP <= 0) { _currentHealth = 0; }
-        else { _currentHealth = calculatedHP; }
-    }
 
 }
