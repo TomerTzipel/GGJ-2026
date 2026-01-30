@@ -4,6 +4,7 @@ using UnityEngine;
 public class MaskChangePoint : MonoBehaviour
 {
     //Event for OnTriggerPlayerChange
+    [SerializeField] private MaskTypeEventChannel MaskChangeEC;
     [SerializeField] private SpriteRenderer _PointSpriteRenderer;
     [SerializeField] private MaskType _MyType;
     [SerializeField] private float _MaskChangeTimer = 2f;
@@ -60,6 +61,7 @@ public class MaskChangePoint : MonoBehaviour
     private IEnumerator ActivateMaskPoint()
     {
         //MaskChangeEvent.OnMaskChange?.Invoke(_MyType);
+        MaskChangeEC.RaiseEvent(_MyType);
         _PointSpriteRenderer.transform.localPosition += _hiddenPosition;
         _currentTimerReset = _MaskChangeTimerReset;
 

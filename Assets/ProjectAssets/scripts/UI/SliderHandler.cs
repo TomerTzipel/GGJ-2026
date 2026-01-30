@@ -11,6 +11,7 @@ public class SliderHandler : MonoBehaviour
     {
         ModifySlider(0.5f);
     }
+    // ↑ just to test ↑
     
     
     public void ModifySlider(float value)

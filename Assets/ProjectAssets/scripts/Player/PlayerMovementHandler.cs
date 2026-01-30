@@ -7,23 +7,18 @@ public class PlayerMovementHandler : MonoBehaviour
     [SerializeField] private PlayerPosition playerPosition;
     [SerializeField] private Rigidbody2D rb;
 
-    [Header("Move Stats")]
-    [SerializeField] private float moveSpeed;
 
-    [Header("Dash Stats")]
-    [SerializeField] private float dashSpeed;
-    [SerializeField] private float dashDuration;
-    [SerializeField] private float dashCD;
+    [SerializeField] private AttackHandler attackHandler;
+    [SerializeField] private PlayerSettings settings;
 
-    private bool _canMove = true;
-    private bool _canDash = true;
+    public bool CanMove { get; set; } = true;
+    public bool CanDash { get; set; } = true;
     private bool _isDashing;
 
     private Vector2 _dashDirection = Vector2.right;
     private Vector2 _moveDirection;
     private InputActions _inputActions;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         _inputActions = new InputActions();
@@ -60,18 +55,18 @@ public class PlayerMovementHandler : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_canMove) Move();
+        if (CanMove) Move();
         if (_isDashing) Dash();       
     }
 
     private void Move()
     {
-        Vector3 move = moveSpeed * Time.fixedDeltaTime * _moveDirection;
+        Vector3 move = settings.MoveSpeed * Time.fixedDeltaTime * _moveDirection;
         rb.MovePosition(transform.position + move);
     }
     private void Dash()
     {
-        Vector3 move = dashSpeed * Time.fixedDeltaTime * _dashDirection;
+        Vector3 move = settings.DashSpeed * Time.fixedDeltaTime * _dashDirection;
         rb.MovePosition(transform.position + move);
     }
     private void HandleMoveInput(InputAction.CallbackContext callbackContext)
@@ -85,22 +80,24 @@ public class PlayerMovementHandler : MonoBehaviour
 
     private void HandleDashInput(InputAction.CallbackContext callbackContext)
     {
-        if (!_canDash) return;
+        if (!CanDash) return;
         StartDashing();
     }
      
     private void StartDashing()
     {
+        attackHandler.CanAttack = false;
         _isDashing = true;
-        _canMove = false;
-        _canDash = false;
-        StartCoroutine(DashDuration(dashDuration));
+        CanMove = false;
+        CanDash = false;
+        StartCoroutine(DashDuration(settings.DashDuration));
     }
     private void FinishDashing()
     {
-        _canMove = true;
+        attackHandler.CanAttack = true;
+        CanMove = true;
         _isDashing = false;
-        StartCoroutine(DashCooldown(dashCD));
+        StartCoroutine(DashCooldown(settings.DashCD));
     }
 
     private IEnumerator DashDuration(float duration)
@@ -111,7 +108,7 @@ public class PlayerMovementHandler : MonoBehaviour
     private IEnumerator DashCooldown(float duration)
     {
         yield return new WaitForSeconds(duration);
-        _canDash = true;
+        CanDash = true;
     }
 
     private IEnumerator DelayPosition()
