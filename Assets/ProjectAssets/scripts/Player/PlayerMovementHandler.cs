@@ -8,7 +8,7 @@ public class PlayerMovementHandler : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
 
 
-    [SerializeField] private AttackHandler attackHandler;
+    [SerializeField] private PlayerAttackHandler attackHandler;
     [SerializeField] private PlayerSettings settings;
 
     public bool CanMove { get; set; } = true;
@@ -87,6 +87,7 @@ public class PlayerMovementHandler : MonoBehaviour
     private void StartDashing()
     {
         attackHandler.CanAttack = false;
+        attackHandler.CanAbility = false;
         _isDashing = true;
         CanMove = false;
         CanDash = false;
@@ -95,6 +96,7 @@ public class PlayerMovementHandler : MonoBehaviour
     private void FinishDashing()
     {
         attackHandler.CanAttack = true;
+        attackHandler.CanAbility = true;
         CanMove = true;
         _isDashing = false;
         StartCoroutine(DashCooldown(settings.DashCD));
