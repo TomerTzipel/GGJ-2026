@@ -11,7 +11,7 @@ public class MainManuManager : MonoBehaviour
     public GameObject SettingsFrame;
     public void StartButton()
     {
-        SceneManager.LoadScene("Game Scene");
+        SceneManager.LoadScene("Player Testing Scene");
     }
     
     public void SettingsButton(bool isSettingActive)
