@@ -7,13 +7,11 @@ public class SliderHandler : MonoBehaviour
     [SerializeField] private Slider slider;
 
     [ContextMenu("SetValue")]
-
-/*
-public void SetHalf()
+    public void SetHalf()
     {
         ModifySlider(0.5f);
     }
-*/    
+    
     
     public void ModifySlider(float value)
     {
