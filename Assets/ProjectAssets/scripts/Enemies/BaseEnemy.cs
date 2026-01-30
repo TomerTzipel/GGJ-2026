@@ -53,7 +53,7 @@ public class BaseEnemy : MonoBehaviour, IHealthComponent
             IHealthComponent playerHealth = GetComponent<IHealthComponent>();
             if (playerHealth != null) playerHealth.TakeDamage(_attackDamage);
 
-            if (_myEnemyType == EnemyType.Melee) { ChangeState(EnemyState.PreparingToAttack); }
+            if (_myEnemyType == EnemyType.Melee) { ChangeState(EnemyState.Idle); }
         }
     }
 
