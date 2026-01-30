@@ -41,7 +41,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip musicIntro;
     [SerializeField] private AudioClip musicNoIntro;
     
-    private void Awake()
+    private void Start()
     {
         StartCoroutine(PlayMusic());
     }
@@ -167,7 +167,7 @@ public class AudioManager : MonoBehaviour
     private IEnumerator PlayMusic()
     {
         audioSourceMusic.PlayOneShot(musicIntro);
-        yield return new WaitForSecondsRealtime(musicIntro.length);
+        yield return new WaitForSecondsRealtime(musicIntro.length - 0.3f);
             audioSourceMusic.clip = musicNoIntro;
             audioSourceMusic.loop = true;
             audioSourceMusic.Play();
