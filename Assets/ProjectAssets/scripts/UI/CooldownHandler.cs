@@ -8,6 +8,7 @@ public class CooldownHandler : MonoBehaviour
 {
     [SerializeField]Image maskImage;
     [SerializeField]TMP_Text cooldownText;
+    [SerializeField]Image cooldownImage;
 
     private float _timeLeft;
 
@@ -31,6 +32,7 @@ public class CooldownHandler : MonoBehaviour
     {
         //Show the timer
         cooldownText.gameObject.SetActive(true);
+        cooldownImage.gameObject.SetActive(true);
         _timeLeft =  cooldown;
         while (_timeLeft >= 0)
         {
@@ -41,6 +43,7 @@ public class CooldownHandler : MonoBehaviour
         }
         //Hide the timer
         cooldownText.gameObject.SetActive(false);
+        cooldownImage.gameObject.SetActive(false);
     }  
     
     
