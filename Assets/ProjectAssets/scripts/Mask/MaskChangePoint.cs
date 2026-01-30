@@ -7,8 +7,8 @@ public class MaskChangePoint : MonoBehaviour
     [SerializeField] private MaskTypeEventChannel MaskChangeEC;
     [SerializeField] private SpriteRenderer _PointSpriteRenderer;
     [SerializeField] private MaskType _MyType;
-    [SerializeField] private float _MaskChangeTimer = 3.5f;
-    [SerializeField] private float _MaskChangeTimerReset = 2f;
+    [SerializeField] private float _MaskChangeTimer = 2f;
+    [SerializeField] private float _MaskChangeTimerReset = 25f;
 
     private Vector3 _hiddenPosition = new Vector3(0f, -10f, 0f);
     private WaitForSeconds _changeMaskActionTime;
@@ -20,7 +20,7 @@ public class MaskChangePoint : MonoBehaviour
     private void Start()
     {
         _PointSpriteRenderer.sprite = MaskSettings.GetSpriteByType(_MyType);
-        _changeMaskActionTime = new WaitForSeconds(_MaskChangeTimer);
+        _changeMaskActionTime = new WaitForSeconds(_MaskChangeTimerReset);
     }
     private void Update()
     {
@@ -63,6 +63,7 @@ public class MaskChangePoint : MonoBehaviour
         //MaskChangeEvent.OnMaskChange?.Invoke(_MyType);
         MaskChangeEC.RaiseEvent(_MyType);
         _PointSpriteRenderer.transform.localPosition += _hiddenPosition;
+        _currentTimerReset = _MaskChangeTimerReset;
 
         yield return _changeMaskActionTime;
 
