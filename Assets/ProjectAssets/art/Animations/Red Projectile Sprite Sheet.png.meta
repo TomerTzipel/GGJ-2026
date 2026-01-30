@@ -1,40 +1,28 @@
 fileFormatVersion: 2
-guid: 05570d49bbb2d2c4a878c4fad443fb0e
+guid: 33a54682b32761c4bb5b42429c47d49b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6658479744553188406
-    second: fire ball_0
+      213: -4716223308733825090
+    second: Red Projectile Sprite Sheet_0
   - first:
-      213: -4875731577514408042
-    second: fire ball_1
+      213: 191546257247156870
+    second: Red Projectile Sprite Sheet_1
   - first:
-      213: 7445241613311276142
-    second: fire ball_2
+      213: -7797699689412172831
+    second: Red Projectile Sprite Sheet_2
   - first:
-      213: 5761603543437492995
-    second: fire ball_3
+      213: 6436963806436702427
+    second: Red Projectile Sprite Sheet_3
   - first:
-      213: 2639270093174154902
-    second: fire ball_4
+      213: 3712287279977703991
+    second: Red Projectile Sprite Sheet_4
   - first:
-      213: 8814263344056313076
-    second: fire ball_5
+      213: 628649380791788629
+    second: Red Projectile Sprite Sheet_5
   - first:
-      213: 542767622615022909
-    second: fire ball_6
-  - first:
-      213: 5675721737852459011
-    second: fire ball_7
-  - first:
-      213: 1075545748445032177
-    second: fire ball_8
-  - first:
-      213: -2635337134159584966
-    second: fire ball_9
-  - first:
-      213: -8881424109548628230
-    second: fire ball_10
+      213: -803060004368088764
+    second: Red Projectile Sprite Sheet_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -130,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fire ball_0
+      name: Red Projectile Sprite Sheet_0
       rect:
         serializedVersion: 2
-        x: 83
-        y: 21
-        width: 1252
-        height: 833
+        x: 0
+        y: 108
+        width: 1368
+        height: 658
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac306c153f35893a0800000000000000
-      internalID: -6658479744553188406
+      spriteID: ebfb08963eb9c8eb0800000000000000
+      internalID: -4716223308733825090
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fire ball_1
+      name: Red Projectile Sprite Sheet_1
       rect:
         serializedVersion: 2
-        x: 1379
-        y: 737
-        width: 235
-        height: 150
+        x: 1485
+        y: 558
+        width: 272
+        height: 78
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 697491686fbe55cb0800000000000000
-      internalID: -4875731577514408042
+      spriteID: 68ab54d5e4288a200800000000000000
+      internalID: 191546257247156870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fire ball_2
+      name: Red Projectile Sprite Sheet_2
       rect:
         serializedVersion: 2
-        x: 1810
-        y: 719
-        width: 204
-        height: 137
+        x: 1809
+        y: 105
+        width: 1060
+        height: 682
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e64ff5cfccfc25760800000000000000
-      internalID: 7445241613311276142
+      spriteID: 1e3e96b427109c390800000000000000
+      internalID: -7797699689412172831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fire ball_3
+      name: Red Projectile Sprite Sheet_3
       rect:
         serializedVersion: 2
-        x: 2762
-        y: 786
-        width: 164
-        height: 101
+        x: 3045
+        y: 548
+        width: 189
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 303493f75e355ff40800000000000000
-      internalID: 5761603543437492995
+      spriteID: bd8b4ba3a70b45950800000000000000
+      internalID: 6436963806436702427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fire ball_4
+      name: Red Projectile Sprite Sheet_4
       rect:
         serializedVersion: 2
-        x: 3169
-        y: 802
-        width: 132
-        height: 68
+        x: 3313
+        y: 136
+        width: 1162
+        height: 661
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 69625f19a2290a420800000000000000
-      internalID: 2639270093174154902
+      spriteID: 73aa543dc91b48330800000000000000
+      internalID: 3712287279977703991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fire ball_5
+      name: Red Projectile Sprite Sheet_5
       rect:
         serializedVersion: 2
-        x: 3392
-        y: 761
-        width: 10
-        height: 9
+        x: 1724
+        y: 285
+        width: 233
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,20 +243,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4f4293bbfcd825a70800000000000000
-      internalID: 8814263344056313076
+      spriteID: 5542d56f74969b800800000000000000
+      internalID: 628649380791788629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fire ball_6
+      name: Red Projectile Sprite Sheet_6
       rect:
         serializedVersion: 2
-        x: 1508
-        y: 431
-        width: 216
-        height: 120
+        x: 3299
+        y: 288
+        width: 179
+        height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,96 +265,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d3d3d8de64c488700800000000000000
-      internalID: 542767622615022909
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fire ball_7
-      rect:
-        serializedVersion: 2
-        x: 1669
-        y: 0
-        width: 969
-        height: 738
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 30898ac69d634ce40800000000000000
-      internalID: 5675721737852459011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fire ball_8
-      rect:
-        serializedVersion: 2
-        x: 2915
-        y: 458
-        width: 154
-        height: 122
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1fe6fb3e82b1dee00800000000000000
-      internalID: 1075545748445032177
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fire ball_9
-      rect:
-        serializedVersion: 2
-        x: 2986
-        y: 0
-        width: 1118
-        height: 759
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a31a50fc6d66d6bd0800000000000000
-      internalID: -2635337134159584966
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fire ball_10
-      rect:
-        serializedVersion: 2
-        x: 934
-        y: 9
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af693c204d7deb480800000000000000
-      internalID: -8881424109548628230
+      spriteID: 441015a4e25fad4f0800000000000000
+      internalID: -803060004368088764
       vertices: []
       indices: 
       edges: []
@@ -385,17 +285,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fire ball_0: -6658479744553188406
-      fire ball_1: -4875731577514408042
-      fire ball_10: -8881424109548628230
-      fire ball_2: 7445241613311276142
-      fire ball_3: 5761603543437492995
-      fire ball_4: 2639270093174154902
-      fire ball_5: 8814263344056313076
-      fire ball_6: 542767622615022909
-      fire ball_7: 5675721737852459011
-      fire ball_8: 1075545748445032177
-      fire ball_9: -2635337134159584966
+      Red Projectile Sprite Sheet_0: -4716223308733825090
+      Red Projectile Sprite Sheet_1: 191546257247156870
+      Red Projectile Sprite Sheet_2: -7797699689412172831
+      Red Projectile Sprite Sheet_3: 6436963806436702427
+      Red Projectile Sprite Sheet_4: 3712287279977703991
+      Red Projectile Sprite Sheet_5: 628649380791788629
+      Red Projectile Sprite Sheet_6: -803060004368088764
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

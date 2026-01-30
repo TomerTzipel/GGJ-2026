@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: a8650ab3197941e46968c7d901491f31
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4795857299365467849
+    second: Green Projectile Sprite Sheet_0
+  - first:
+      213: 2057027764355121078
+    second: Green Projectile Sprite Sheet_1
+  - first:
+      213: -6707549894572865820
+    second: Green Projectile Sprite Sheet_2
+  - first:
+      213: -4228236747481925972
+    second: Green Projectile Sprite Sheet_3
+  - first:
+      213: 9017064448454304899
+    second: Green Projectile Sprite Sheet_4
+  - first:
+      213: -7059555081891850382
+    second: Green Projectile Sprite Sheet_5
+  - first:
+      213: 8716487181825187422
+    second: Green Projectile Sprite Sheet_6
+  - first:
+      213: 7677121726756062255
+    second: Green Projectile Sprite Sheet_7
+  - first:
+      213: 5119266208131392518
+    second: Green Projectile Sprite Sheet_8
+  - first:
+      213: -5035147365287771387
+    second: Green Projectile Sprite Sheet_9
+  - first:
+      213: -5996629301991721059
+    second: Green Projectile Sprite Sheet_10
+  - first:
+      213: -6383064376388892672
+    second: Green Projectile Sprite Sheet_11
+  - first:
+      213: 7133028447634567433
+    second: Green Projectile Sprite Sheet_12
+  - first:
+      213: 1030987800972574449
+    second: Green Projectile Sprite Sheet_13
+  - first:
+      213: -7042561408220842670
+    second: Green Projectile Sprite Sheet_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Green Projectile Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 215
+        width: 928
+        height: 616
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7396bdd1231b17db0800000000000000
+      internalID: -4795857299365467849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Projectile Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 733
+        width: 122
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bfb0836ad70c8c10800000000000000
+      internalID: 2057027764355121078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Projectile Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 2855
+        y: 795
+        width: 136
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e686c4b8eef9e2a0800000000000000
+      internalID: -6707549894572865820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Projectile Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 809
+        width: 117
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca6361094194255c0800000000000000
+      internalID: -4228236747481925972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Projectile Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 791
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3842ce6675c032d70800000000000000
+      internalID: 9017064448454304899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Projectile Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3148
+        y: 791
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277588f5e0c670e90800000000000000
+      internalID: -7059555081891850382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Projectile Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 3182
+        y: 780
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5e9fe1f8ee27f870800000000000000
+      internalID: 8716487181825187422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Projectile Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 209
+        width: 781
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f248abc098d9a8a60800000000000000
+      internalID: 7677121726756062255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Projectile Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 700
+        width: 121
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60425564e794b0740800000000000000
+      internalID: 5119266208131392518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Projectile Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2633
+        y: 588
+        width: 115
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503474c06209f1ab0800000000000000
+      internalID: -5035147365287771387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Projectile Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 3102
+        y: 215
+        width: 809
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d97b51ddb61b7cca0800000000000000
+      internalID: -5996629301991721059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Projectile Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 525
+        width: 165
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 008c3e2c4ccca67a0800000000000000
+      internalID: -6383064376388892672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Projectile Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 418
+        width: 128
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 901b30aa49b9df260800000000000000
+      internalID: 7133028447634567433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Projectile Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 360
+        width: 101
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe3bbc41fdce4e00800000000000000
+      internalID: 1030987800972574449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Projectile Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 3067
+        y: 218
+        width: 117
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2553f1a56bbc34e90800000000000000
+      internalID: -7042561408220842670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Green Projectile Sprite Sheet_0: -4795857299365467849
+      Green Projectile Sprite Sheet_1: 2057027764355121078
+      Green Projectile Sprite Sheet_10: -5996629301991721059
+      Green Projectile Sprite Sheet_11: -6383064376388892672
+      Green Projectile Sprite Sheet_12: 7133028447634567433
+      Green Projectile Sprite Sheet_13: 1030987800972574449
+      Green Projectile Sprite Sheet_14: -7042561408220842670
+      Green Projectile Sprite Sheet_2: -6707549894572865820
+      Green Projectile Sprite Sheet_3: -4228236747481925972
+      Green Projectile Sprite Sheet_4: 9017064448454304899
+      Green Projectile Sprite Sheet_5: -7059555081891850382
+      Green Projectile Sprite Sheet_6: 8716487181825187422
+      Green Projectile Sprite Sheet_7: 7677121726756062255
+      Green Projectile Sprite Sheet_8: 5119266208131392518
+      Green Projectile Sprite Sheet_9: -5035147365287771387
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
