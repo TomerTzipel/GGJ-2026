@@ -34,7 +34,10 @@ public class MaskSettings : MonoBehaviour
             }
         }
     }
-
+    public static MaskData GetDataByType(MaskType type)
+    {
+        return _maskDictionary[type];
+    }
     public static Sprite GetSpriteByType(MaskType type)
     {
         return _maskDictionary[type].Sprite;
