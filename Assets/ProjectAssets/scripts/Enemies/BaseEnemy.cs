@@ -6,7 +6,7 @@ public enum EnemyState { Idle, Chasing, PreparingToAttack }
 public class BaseEnemy : MonoBehaviour, IHealthComponent
 {
     [Header("Events")]
-    [SerializeField] private PlayerPosition playerPosition;
+    [SerializeField] protected PlayerPosition playerPosition;
     [Header("Base Enemy Data")]
     [SerializeField] private EnemyType _myEnemyType;
     [SerializeField] private float _moveSpeed = 3f;
