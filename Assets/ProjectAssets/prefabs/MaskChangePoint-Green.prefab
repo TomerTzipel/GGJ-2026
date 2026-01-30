@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e66931c3859a3344c9ae5ac75d713cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MaskChangePoint
+  MaskChangeEC: {fileID: 11400000, guid: 30914ee8483595b438920cba3ff76544, type: 2}
   _PointSpriteRenderer: {fileID: 2219987410128763056}
   _MyType: 0
   _MaskChangeTimer: 3.5
