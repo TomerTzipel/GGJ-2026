@@ -40,19 +40,10 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField] private AudioClip musicIntro;
     [SerializeField] private AudioClip musicNoIntro;
-
-    private InputActions input;
+    
     private void Awake()
     {
-        input = new InputActions();
         StartCoroutine(PlayMusic());
-        input.Player.Interact.Enable();
-        input.Player.Interact.performed  += NewMethod;
-    }
-    private void NewMethod(InputAction.CallbackContext context)
-    {
-        Debug.Log("NewMethod");
-        audioSourceMusic.time = audioSourceMusic.clip.length - 3;
     }
 
     void DashSound()
