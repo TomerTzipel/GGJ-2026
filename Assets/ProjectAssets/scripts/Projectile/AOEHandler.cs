@@ -6,6 +6,8 @@ public class AOEHandler : MonoBehaviour
     [SerializeField] MaskType maskType;
     [SerializeField] float duration;
 
+    public int Damage { get; set; }
+
     private void Awake()
     {
         StartCoroutine(Duration());
@@ -15,7 +17,10 @@ public class AOEHandler : MonoBehaviour
     {
         if (!collision.CompareTag("Enemy")) return;
 
-        //ENEMY TAKE DAMAGE
+        if (collision.TryGetComponent(out IHealthComponent health))
+        {
+            health.TakeDamage(Damage);
+        }
     }
 
     private IEnumerator Duration()

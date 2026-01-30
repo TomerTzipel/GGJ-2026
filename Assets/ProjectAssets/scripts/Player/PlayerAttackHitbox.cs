@@ -4,12 +4,16 @@ using UnityEngine;
 public class PlayerAttackHitbox : MonoBehaviour
 {
     public MaskType CurrentMask { get; set; }
+    [SerializeField] private PlayerSettings settings;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
         {
-            //Deal damage to enemy
+            if (collision.TryGetComponent(out IHealthComponent health))
+            {
+                health.TakeDamage(settings.Damage);
+            }
         }
     }
 

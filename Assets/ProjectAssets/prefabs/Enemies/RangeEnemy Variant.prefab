@@ -14,11 +14,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2365730192322876412, guid: 8fe8140c0fa863246b69806558080738, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 4.271095
       objectReference: {fileID: 0}
     - target: {fileID: 2365730192322876412, guid: 8fe8140c0fa863246b69806558080738, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.7703862
       objectReference: {fileID: 0}
     - target: {fileID: 2365730192322876412, guid: 8fe8140c0fa863246b69806558080738, type: 3}
       propertyPath: m_LocalPosition.z
@@ -97,3 +97,4 @@ MonoBehaviour:
   _attackCooldown: 5.3
   _attackDamage: 10
   _maxHealth: 18
+  projectilePrefab: {fileID: 8302572023587501422, guid: af9c323ebc643d0488b1d9b0f043657c, type: 3}
