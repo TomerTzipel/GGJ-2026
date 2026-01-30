@@ -89,10 +89,12 @@ public class PlayerAttackHandler : MonoBehaviour
         movementHandler.CanMove = false;
         movementHandler.CanDash = false;
 
+        //Choose Projectile from dictionary
+
+
         ProjectileHandler projectile = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
         projectile.MoveDirection = _attackDirection;
-        projectile.CurrentMask = _currentMask;
-
+        //projectile.CurrentMask = _currentMask;
         StartCoroutine(AbilityCooldown(settings.AbilityCD));
         StartCoroutine(AbilityDuration(settings.AbilityDuration));
     }
