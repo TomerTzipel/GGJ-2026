@@ -235,6 +235,7 @@ MonoBehaviour:
   spellLeaf: {fileID: 8300000, guid: 38d0a7a957f5a794a82dc9e654cc89c3, type: 3}
   musicIntro: {fileID: 8300000, guid: fcc7878c2dead744da81dfdc02c685b3, type: 3}
   musicNoIntro: {fileID: 8300000, guid: 6a5dbaa22cbb4174a9705b5aa5ea9bb3, type: 3}
+  test: {fileID: 8300000, guid: 95eeac87690a12c428e2750e4b14a046, type: 3}
 --- !u!4 &223225573
 Transform:
   m_ObjectHideFlags: 0
@@ -262,7 +263,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 6a5dbaa22cbb4174a9705b5aa5ea9bb3, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
