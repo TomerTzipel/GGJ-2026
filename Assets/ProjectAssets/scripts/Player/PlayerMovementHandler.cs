@@ -4,13 +4,19 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovementHandler : MonoBehaviour
 {
-
+    [SerializeField] private PlayerPosition playerPosition;
     [SerializeField] private Rigidbody2D rb;
+
+    [Header("Move Stats")]
     [SerializeField] private float moveSpeed;
+
+    [Header("Dash Stats")]
     [SerializeField] private float dashSpeed;
     [SerializeField] private float dashDuration;
+    [SerializeField] private float dashCD;
 
     private bool _canMove = true;
+    private bool _canDash = true;
     private bool _isDashing;
 
     private Vector2 _dashDirection = Vector2.right;
@@ -47,6 +53,11 @@ public class PlayerMovementHandler : MonoBehaviour
         transform.Translate(moveSpeed * Time.deltaTime * _moveDirection);
     }*/
 
+    private void Start()
+    {
+        StartCoroutine(DelayPosition());
+    }
+
     private void FixedUpdate()
     {
         if (_canMove) Move();
@@ -74,6 +85,7 @@ public class PlayerMovementHandler : MonoBehaviour
 
     private void HandleDashInput(InputAction.CallbackContext callbackContext)
     {
+        if (!_canDash) return;
         StartDashing();
     }
      
@@ -81,17 +93,33 @@ public class PlayerMovementHandler : MonoBehaviour
     {
         _isDashing = true;
         _canMove = false;
+        _canDash = false;
         StartCoroutine(DashDuration(dashDuration));
     }
     private void FinishDashing()
     {
         _canMove = true;
         _isDashing = false;
+        StartCoroutine(DashCooldown(dashCD));
     }
 
     private IEnumerator DashDuration(float duration)
     {  
         yield return new WaitForSeconds(duration);
         FinishDashing();
+    }
+    private IEnumerator DashCooldown(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        _canDash = true;
+    }
+
+    private IEnumerator DelayPosition()
+    {
+        while (true)
+        {
+            playerPosition.PlayerDelayedPosition = transform.position;
+            yield return new WaitForSeconds(playerPosition.SampleDelay);
+        }    
     }
 }
