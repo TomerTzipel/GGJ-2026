@@ -75,6 +75,16 @@ MonoBehaviour:
   spellLeaf: {fileID: 8300000, guid: 38d0a7a957f5a794a82dc9e654cc89c3, type: 3}
   musicIntro: {fileID: 8300000, guid: fcc7878c2dead744da81dfdc02c685b3, type: 3}
   musicNoIntro: {fileID: 8300000, guid: 6a5dbaa22cbb4174a9705b5aa5ea9bb3, type: 3}
+  dashEvent: {fileID: 11400000, guid: 1f514ffa8bf21504c9bb1d089dfc0ce0, type: 2}
+  doorOpenEvent: {fileID: 11400000, guid: d25ae249127d9b847b8171e9757cb211, type: 2}
+  enemyAttackEvent: {fileID: 11400000, guid: b94213f8e7a30084d8cfce6d67f130c3, type: 2}
+  explosionEvent: {fileID: 11400000, guid: cbc4c61dc4d7fd74f99c41f7fed01e8f, type: 2}
+  enemyHurtEvent: {fileID: 11400000, guid: d380ae067fe803a4499417e108bd96a4, type: 2}
+  playHurtEvent: {fileID: 11400000, guid: e5fd1fc5108f0a64fa34745075c67919, type: 2}
+  maskChangeEvent: {fileID: 11400000, guid: 30914ee8483595b438920cba3ff76544, type: 2}
+  playerDeadEvent: {fileID: 11400000, guid: ab001f2ac8ecbbb499326c74eba0cfd7, type: 2}
+  punchAttackEvent: {fileID: 11400000, guid: 2a4901b371ae04940b92d05366c77576, type: 2}
+  spellAttackEvent: {fileID: 11400000, guid: dcf292eabee67ad45935989ad030f020, type: 2}
 --- !u!82 &5234909781376281710
 AudioSource:
   m_ObjectHideFlags: 0

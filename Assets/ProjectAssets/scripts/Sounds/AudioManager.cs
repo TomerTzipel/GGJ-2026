@@ -40,6 +40,43 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField] private AudioClip musicIntro;
     [SerializeField] private AudioClip musicNoIntro;
+
+    [SerializeField] private VoidEventChannel dashEvent;
+    [SerializeField] private VoidEventChannel doorOpenEvent;
+    [SerializeField] private MaskTypeEventChannel enemyAttackEvent;
+    [SerializeField] private MaskTypeEventChannel explosionEvent;
+    [SerializeField] private MaskTypeEventChannel enemyHurtEvent;
+    [SerializeField] private FloatEventChannel playHurtEvent;
+    [SerializeField] private MaskTypeEventChannel maskChangeEvent;
+    [SerializeField] private VoidEventChannel playerDeadEvent;
+    [SerializeField] private MaskTypeEventChannel punchAttackEvent;
+    [SerializeField] private MaskTypeEventChannel spellAttackEvent;
+
+    private void OnEnable()
+    {
+        dashEvent.OnEvent += DashSound;
+        doorOpenEvent.OnEvent += DoorOpenSound;
+        playerDeadEvent.OnEvent += PlayerDeadSound;
+        playHurtEvent.OnEvent += PlayerGrunt;
+        enemyAttackEvent.OnEvent += EnemyAttackSound;
+        explosionEvent.OnEvent += ExplosionSound;
+        //enemyHurtEvent.OnEvent += EnemyHurtSound;  
+        maskChangeEvent.OnEvent += MaskChangeSound; // there is only 1 mask change sound affect
+        punchAttackEvent.OnEvent += PunchAttackSound;
+        spellAttackEvent.OnEvent += SpellAttackSound;
+    }
+    private void OnDisable()
+    {
+        dashEvent.OnEvent -= DashSound;
+        doorOpenEvent.OnEvent -= DoorOpenSound;
+        playerDeadEvent.OnEvent -= PlayerDeadSound;
+        enemyAttackEvent.OnEvent -= EnemyAttackSound;
+        explosionEvent.OnEvent -= ExplosionSound;
+        //enemyHurtEvent.OnEvent -= EnemyHurtSound;  
+        maskChangeEvent.OnEvent -= MaskChangeSound; // there is only 1 mask change sound affect
+        punchAttackEvent.OnEvent -= PunchAttackSound;
+        spellAttackEvent.OnEvent -= SpellAttackSound;
+    }
     
     private void Start()
     {
@@ -56,9 +93,9 @@ public class AudioManager : MonoBehaviour
         audioSourceSFX.PlayOneShot(doorOpen);
     }
 
-    void MaskChangeSound()
+    void MaskChangeSound(MaskType _)
     {
-        audioSourceSFX.PlayOneShot(maskChange);
+         audioSourceSFX.PlayOneShot(maskChange);
     }
 
     void PlayerDeadSound()
@@ -66,49 +103,72 @@ public class AudioManager : MonoBehaviour
         audioSourceSFX.PlayOneShot(playerDead);
     }
 
-    void EnemyFireSound()
+    void EnemyAttackSound(MaskType type)
     {
-        audioSourceSFX.PlayOneShot(enemyFire);
+        switch (type)
+        {
+            case MaskType.Red:
+                audioSourceSFX.PlayOneShot(enemyFire);
+                break;
+            case MaskType.Blue:
+                audioSourceSFX.PlayOneShot(enemyIce);
+                break;
+            case MaskType.Green:
+                audioSourceSFX.PlayOneShot(enemyLeaf);
+                break;
+        }
+        
+    }
+    
+    void ExplosionSound(MaskType type)
+    {
+        switch (type)
+        {
+            case MaskType.Red:
+                audioSourceSFX.PlayOneShot(explosionFire);
+                break;
+            case MaskType.Blue:
+                audioSourceSFX.PlayOneShot(explosionIce);
+                break;
+            case MaskType.Green:
+                audioSourceSFX.PlayOneShot(explosionLeaf);
+                break;
+        }
+        
     }
 
-    void EnemyIceSound()
+    void PunchAttackSound(MaskType type)
     {
-        audioSourceSFX.PlayOneShot(enemyIce);
+        switch (type)
+        {
+            case MaskType.Red:
+                audioSourceSFX.PlayOneShot(punchFire);
+                break;
+            case MaskType.Blue:
+                audioSourceSFX.PlayOneShot(punchIce);
+                break;
+            case MaskType.Green:
+                audioSourceSFX.PlayOneShot(punchLeaf);
+                break;
+        }
+        
     }
-
-    void EnemyLeafSound()
+    
+    void SpellAttackSound(MaskType type)
     {
-        audioSourceSFX.PlayOneShot(enemyLeaf);
-    }
-
-    void ExplosionFireSound()
-    {
-        audioSourceSFX.PlayOneShot(explosionFire);
-    }
-
-    void ExplosionIceSound()
-    {
-        audioSourceSFX.PlayOneShot(explosionIce);
-    }
-
-    void ExplosionLeafSound()
-    {
-        audioSourceSFX.PlayOneShot(explosionLeaf);
-    }
-
-    void PunchFireSound()
-    {
-        audioSourceSFX.PlayOneShot(punchFire);
-    }
-
-    void PunchIceSound()
-    {
-        audioSourceSFX.PlayOneShot(punchIce);
-    }
-
-    void PumchLeafSound()
-    {
-        audioSourceSFX.PlayOneShot(punchLeaf);
+        switch (type)
+        {
+            case MaskType.Red:
+                audioSourceSFX.PlayOneShot(spellFire);
+                break;
+            case MaskType.Blue:
+                audioSourceSFX.PlayOneShot(spellIce);
+                break;
+            case MaskType.Green:
+                audioSourceSFX.PlayOneShot(spellLeaf);
+                break;
+        }
+        
     }
 
     [ContextMenu("Play Female Grunt")]
@@ -147,7 +207,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    void PlayerGrunt()
+    void PlayerGrunt(float _)
     {
         int random = Random.Range(0, 3);
         switch (random)
