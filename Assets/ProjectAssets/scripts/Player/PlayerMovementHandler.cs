@@ -8,9 +8,9 @@ public class PlayerMovementHandler : MonoBehaviour
     [SerializeField] private PlayerPosition playerPosition;
     [SerializeField] private Rigidbody2D rb;
 
-
     [SerializeField] private PlayerAttackHandler attackHandler;
     [SerializeField] private PlayerSettings settings;
+    [SerializeField] private Animator animator;
 
     public bool CanMove { get; set; } = true;
     public bool CanDash { get; set; } = true;
@@ -64,6 +64,7 @@ public class PlayerMovementHandler : MonoBehaviour
     private void Move()
     {
         Vector3 move = settings.MoveSpeed * Time.fixedDeltaTime * _moveDirection;
+        animator.SetBool("IsWalking", _moveDirection != Vector2.zero);
         rb.MovePosition(transform.position + move);
     }
     private void Dash()

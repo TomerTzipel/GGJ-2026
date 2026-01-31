@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3738658980823321932}
+  - component: {fileID: 5045167088005489718}
   - component: {fileID: 1493501079856053822}
   m_Layer: 0
   m_Name: Visuals
@@ -33,6 +34,28 @@ Transform:
   - {fileID: 5310598227410545979}
   m_Father: {fileID: 4070883746539596069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &5045167088005489718
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62233683368802931}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dc44dbabd2d53564ea5f7e531b9c25de, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &1493501079856053822
 SpriteRenderer:
   serializedVersion: 2
@@ -324,6 +347,7 @@ MonoBehaviour:
   rb: {fileID: 106603656480459839}
   attackHandler: {fileID: 8058994331830549054}
   settings: {fileID: 11400000, guid: 3455283ca71e0164fa5c29861e90805b, type: 2}
+  animator: {fileID: 5045167088005489718}
 --- !u!50 &106603656480459839
 Rigidbody2D:
   serializedVersion: 5
