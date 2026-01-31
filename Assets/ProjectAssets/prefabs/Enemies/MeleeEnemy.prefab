@@ -51,9 +51,9 @@ MonoBehaviour:
   enemyHurtEC: {fileID: 11400000, guid: d380ae067fe803a4499417e108bd96a4, type: 2}
   _myMaskType: 0
   _myEnemyType: 0
-  _moveSpeed: 9
+  _moveSpeed: 6
   _attackRange: 0
-  _attackCooldown: 0.75
+  _attackCooldown: 1.25
   _attackDamage: 8
   _maxHealth: 30
 --- !u!61 &1651741789787009683

@@ -12,14 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa84ee728ed00144aa4be0d856dc603, type: 3}
   m_Name: PlayerSettings
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSettings
+  <StartingMask>k__BackingField: 0
   <MaxHP>k__BackingField: 100
-  <MoveSpeed>k__BackingField: 10
+  <MoveSpeed>k__BackingField: 7
   <DashSpeed>k__BackingField: 20
-  <DashDuration>k__BackingField: 0.1
-  <DashCD>k__BackingField: 1
+  <DashDuration>k__BackingField: 0.2
+  <DashCD>k__BackingField: 0.5
   <Damage>k__BackingField: 20
   <Range>k__BackingField: 1
   <AttackCD>k__BackingField: 1
-  <AttackDuration>k__BackingField: 0.5
+  <AttackDuration>k__BackingField: 0.1
   <AbilityCD>k__BackingField: 0
   <AbilityDuration>k__BackingField: 0

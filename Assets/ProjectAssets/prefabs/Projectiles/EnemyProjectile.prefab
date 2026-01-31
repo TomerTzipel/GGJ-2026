@@ -49,6 +49,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5052296933026699195, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
+      propertyPath: moveSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052296933026699195, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
       propertyPath: isPlayerProjectile
       value: 0
       objectReference: {fileID: 0}
