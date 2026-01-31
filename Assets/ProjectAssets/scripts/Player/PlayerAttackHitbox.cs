@@ -1,10 +1,17 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerAttackHitbox : MonoBehaviour
 {
     public MaskType CurrentMask { get; set; }
+    public float LifeTime { get; set; }
     [SerializeField] private PlayerSettings settings;
+
+    private void Start()
+    {
+        StartCoroutine(LifeTimeCoroutine(LifeTime));
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,6 +22,12 @@ public class PlayerAttackHitbox : MonoBehaviour
                 health.TakeDamage(settings.Damage,CurrentMask);
             }
         }
+    }
+
+    private IEnumerator LifeTimeCoroutine(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        Destroy(gameObject);
     }
 
 

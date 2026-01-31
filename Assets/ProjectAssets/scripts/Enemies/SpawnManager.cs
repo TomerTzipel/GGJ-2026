@@ -10,14 +10,14 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private float _MinSpawnInterval = 1;
     private void Start()
     {
-        ActivateSpawners();
+        Invoke("ActivateSpawners",5f);
     }
 
     public void ActivateSpawners()
     {
         foreach (EnemySpawner spawner in _EnemySpawners) 
         { 
-            spawner.StartSpawning(
+           spawner.StartSpawning(
             _SpawnAmount,_SpawnInterval,
             _SpawnIntervalLoweringInterval,
             _SpawnIntervalLoweringAmount,
