@@ -16,13 +16,21 @@ public class BaseEnemy : MonoBehaviour, IHealthComponent
     [SerializeField] private float _attackCooldown = 0.75f;
     [SerializeField] protected int _attackDamage = 8;
     [SerializeField] private int _maxHealth = 30;
-
+    [SerializeField] private SpriteRenderer _maskRenderer;
     private EnemyState _myCurrentState;
     private Rigidbody2D _myRigidbody;
     private float _lastAttackTime;
     private int _currentHealth;
 
-    private void Awake() { _lastAttackTime = _attackCooldown; _currentHealth = _maxHealth; _myRigidbody = GetComponent<Rigidbody2D>(); }
+    private void Awake() 
+    { 
+        _lastAttackTime = _attackCooldown; _currentHealth = _maxHealth; _myRigidbody = GetComponent<Rigidbody2D>();
+        _myMaskType = (MaskType)UnityEngine.Random.Range(0, 3);
+
+        if(_myEnemyType == EnemyType.Melee) _maskRenderer.sprite = MaskSettings.GetMaleSpriteByType(_myMaskType);
+        else _maskRenderer.sprite = MaskSettings.GetFemaleSpriteByType(_myMaskType);
+
+    }
     private void Start()
     {
         if (playerPosition == null) { ChangeState(EnemyState.Idle); return; }
@@ -137,5 +145,7 @@ public class BaseEnemy : MonoBehaviour, IHealthComponent
     protected virtual void ChangeToIdle() { _lastAttackTime = _attackCooldown; }
 
     protected virtual void Die() { Destroy(gameObject); }
+
+    
 
 }

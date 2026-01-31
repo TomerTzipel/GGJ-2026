@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 64977375805871389, guid: 8fe8140c0fa863246b69806558080738, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 64977375805871389, guid: 8fe8140c0fa863246b69806558080738, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 311915680762910837, guid: 8fe8140c0fa863246b69806558080738, type: 3}
       propertyPath: m_Name
       value: RangeEnemy Variant
@@ -53,16 +61,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8978287371311230474, guid: 8fe8140c0fa863246b69806558080738, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2674516102858432442, guid: 8621e03722c8e464fb55e41c5fba958a, type: 3}
+    - target: {fileID: 8978287371311230474, guid: 8fe8140c0fa863246b69806558080738, type: 3}
       propertyPath: m_Color.b
-      value: 0.44705883
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8978287371311230474, guid: 8fe8140c0fa863246b69806558080738, type: 3}
       propertyPath: m_Color.g
-      value: 0.15686277
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8978287371311230474, guid: 8fe8140c0fa863246b69806558080738, type: 3}
       propertyPath: m_Color.r
-      value: 0.30582273
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5084075018946594591, guid: 8fe8140c0fa863246b69806558080738, type: 3}
@@ -99,5 +111,6 @@ MonoBehaviour:
   _attackCooldown: 5.3
   _attackDamage: 10
   _maxHealth: 18
+  _maskRenderer: {fileID: 0}
   projectilePrefab: {fileID: 8302572023587501422, guid: af9c323ebc643d0488b1d9b0f043657c, type: 3}
   rangedEnemyAttackEC: {fileID: 11400000, guid: b94213f8e7a30084d8cfce6d67f130c3, type: 2}

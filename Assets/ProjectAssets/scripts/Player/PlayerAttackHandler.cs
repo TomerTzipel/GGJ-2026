@@ -113,7 +113,7 @@ public class PlayerAttackHandler : MonoBehaviour
     private void HandleMaskChange(MaskType type)
     {
         _currentMask = type;
-        maskRenderer.sprite = MaskSettings.GetSpriteByType(type);
+        maskRenderer.sprite = MaskSettings.GetPlayerSpriteByType(type);
     }
 
     private IEnumerator AttackCooldown(float duration)
