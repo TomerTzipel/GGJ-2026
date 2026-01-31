@@ -345,30 +345,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaveManager
       objectReference: {fileID: 0}
-    - target: {fileID: 4962734392837041229, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
-      propertyPath: _SpawnAmount
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4962734392837041229, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
-      propertyPath: _SpawnInterval
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415457605562990071, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 14.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5415457605562990071, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5713755416223605677, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -14.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5713755416223605677, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6334478777924955820, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -409,29 +385,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6919392219308333684, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
-      propertyPath: _SpawnAmount
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6919392219308333684, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
-      propertyPath: _SpawnInterval
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7235693783344841774, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
-      propertyPath: _SpawnAmount
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7235693783344841774, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
-      propertyPath: _SpawnInterval
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8069926945956498382, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
+    - target: {fileID: 9054863208540101736, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8069926945956498382, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 7.08
+      value: 8.94
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2667,7 +2623,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4494462648384476514, guid: 37ac1f8d76b37814da2b3afffa2d0308, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

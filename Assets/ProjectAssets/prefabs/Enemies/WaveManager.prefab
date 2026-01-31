@@ -52,8 +52,12 @@ MonoBehaviour:
   - {fileID: 6919392219308333684}
   - {fileID: 7235693783344841774}
   - {fileID: 4962734392837041229}
+  - {fileID: 6235332034222636011}
   _SpawnAmount: -1
   _SpawnInterval: 3
+  _SpawnIntervalLoweringInterval: 5
+  _SpawnIntervalLoweringAmount: 0.1
+  _MinSpawnInterval: 1
 --- !u!1001 &1239247860326461955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -257,6 +261,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fe37df9ec16a554f85dfe00f2ec9b46, type: 3}
+--- !u!114 &6235332034222636011 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8157197382221719671, guid: 1fe37df9ec16a554f85dfe00f2ec9b46, type: 3}
+  m_PrefabInstance: {fileID: 2863294021624026012}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54be6c3f4589eb7499a03500494e55a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Spawner
 --- !u!4 &9054863208540101736 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6491130322588995572, guid: 1fe37df9ec16a554f85dfe00f2ec9b46, type: 3}
