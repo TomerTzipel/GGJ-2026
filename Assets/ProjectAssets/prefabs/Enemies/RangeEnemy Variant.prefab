@@ -85,6 +85,11 @@ PrefabInstance:
       insertIndex: 1
       addedObject: {fileID: 3050869645622222111}
   m_SourcePrefab: {fileID: 100100000, guid: 8fe8140c0fa863246b69806558080738, type: 3}
+--- !u!212 &5820672289633678897 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 64977375805871389, guid: 8fe8140c0fa863246b69806558080738, type: 3}
+  m_PrefabInstance: {fileID: 5774166743879230252}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6086003186705169241 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 311915680762910837, guid: 8fe8140c0fa863246b69806558080738, type: 3}
@@ -111,6 +116,6 @@ MonoBehaviour:
   _attackCooldown: 5.3
   _attackDamage: 10
   _maxHealth: 18
-  _maskRenderer: {fileID: 0}
+  _maskRenderer: {fileID: 5820672289633678897}
   projectilePrefab: {fileID: 8302572023587501422, guid: af9c323ebc643d0488b1d9b0f043657c, type: 3}
   rangedEnemyAttackEC: {fileID: 11400000, guid: b94213f8e7a30084d8cfce6d67f130c3, type: 2}
