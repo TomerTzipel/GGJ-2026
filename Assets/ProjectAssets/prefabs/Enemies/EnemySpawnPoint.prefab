@@ -45,9 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54be6c3f4589eb7499a03500494e55a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
-  _SpawnOffset: {x: 0, y: 0, z: 0}
+  _SpawnOffset: {x: 0, y: -1, z: 0}
   _SpawnAmount: 5
-  _SpawnInterval: 1.25
+  _SpawnInterval: 7.87
   _Animator: {fileID: 6362037018309608641}
   _MeleeEnemyPrefab: {fileID: 311915680762910837, guid: 8fe8140c0fa863246b69806558080738, type: 3}
   _RangeEnemyPrefab: {fileID: 6086003186705169241, guid: d05ef0a0f2221c14fa8a48a8f27aef42, type: 3}
@@ -133,7 +133,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 53cbd7e6b60833c458c320708823b11f, type: 3}
+  m_Sprite: {fileID: -7341407202210888751, guid: 8c9b8a0dc7906944a815916674785574, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
