@@ -51,19 +51,19 @@ PrefabInstance:
     - target: {fileID: 4441649518601851529, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 4432154998788011634, guid: c86b9c8bbe7025444b726517e0f385e5, type: 3}
+      objectReference: {fileID: -4749068003516435962, guid: 4c109cf1020403b4f97402178ca496d9, type: 3}
     - target: {fileID: 5052296933026699195, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
       propertyPath: isPlayerProjectile
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5398150170380500913, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
       propertyPath: m_Name
-      value: EnemyProjectile
+      value: EnemyProjectile 2
       objectReference: {fileID: 0}
     - target: {fileID: 6019176869062031838, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 198a14f2a6bc55e489f67e16bd0b765c, type: 2}
+      objectReference: {fileID: 9100000, guid: b3624d8981f3b6f48877152564fedc6f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
