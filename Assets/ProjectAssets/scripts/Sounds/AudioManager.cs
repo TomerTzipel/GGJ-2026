@@ -188,7 +188,6 @@ public class AudioManager : MonoBehaviour
     void FemaleGrunt()
     {
         int random = Random.Range(0, 3);
-        Debug.Log(random);
         switch (random)
         {
             case 0:

@@ -13,7 +13,7 @@ public class PlayerHealthHandler : MonoBehaviour,IHealthComponent
         _hp = settings.MaxHP;
     }
 
-    public void TakeDamage(int damageAmount)
+    public void TakeDamage(int damageAmount, MaskType _)
     {
         Debug.Log($"Player Taking {damageAmount} damage");
         _hp -= damageAmount;

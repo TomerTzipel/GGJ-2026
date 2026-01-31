@@ -12,7 +12,7 @@ public class PlayerAttackHitbox : MonoBehaviour
         {
             if (collision.TryGetComponent(out IHealthComponent health))
             {
-                health.TakeDamage(settings.Damage);
+                health.TakeDamage(settings.Damage,CurrentMask);
             }
         }
     }

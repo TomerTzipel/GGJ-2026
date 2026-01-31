@@ -25,7 +25,7 @@ public class AOEHandler : MonoBehaviour
 
         if (collision.TryGetComponent(out IHealthComponent health))
         {
-            health.TakeDamage(Damage);
+            health.TakeDamage(Damage,maskType);
         }
     }
 
