@@ -32,6 +32,7 @@ public class ProjectileHandler : MonoBehaviour
             if(collision.TryGetComponent(out IHealthComponent health))
             {
                 health.TakeDamage(Damage, MaskType);
+                Destroy(gameObject);
             }
        
         }
@@ -45,7 +46,8 @@ public class ProjectileHandler : MonoBehaviour
     private IEnumerator LifeTime(float duration)
     {
         yield return new WaitForSeconds(duration);
-        GenerateAOE();
+        if(isPlayerProjectile) GenerateAOE();
+
     }
 
     private void GenerateAOE()

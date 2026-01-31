@@ -70,6 +70,7 @@ public class AudioManager : MonoBehaviour
         dashEvent.OnEvent -= DashSound;
         doorOpenEvent.OnEvent -= DoorOpenSound;
         playerDeadEvent.OnEvent -= PlayerDeadSound;
+        playHurtEvent.OnEvent -= PlayerGrunt;
         enemyAttackEvent.OnEvent -= EnemyAttackSound;
         explosionEvent.OnEvent -= ExplosionSound;
         enemyHurtEvent.OnEvent -= EnemyHurtSound;  

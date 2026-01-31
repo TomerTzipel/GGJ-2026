@@ -29,7 +29,7 @@ public class MaskSettings : MonoBehaviour
         {
             for (int i = 0; i < _MaskTypes.Length; i++)
             {
-                _maskDictionary.Add(_MaskTypes[i], _MaskData[i]);
+                _maskDictionary.TryAdd(_MaskTypes[i], _MaskData[i]);
             }
         }
     }
