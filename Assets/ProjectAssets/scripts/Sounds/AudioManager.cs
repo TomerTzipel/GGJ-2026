@@ -45,7 +45,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private VoidEventChannel doorOpenEvent;
     [SerializeField] private MaskTypeEventChannel enemyAttackEvent;
     [SerializeField] private MaskTypeEventChannel explosionEvent;
-    [SerializeField] private MaskTypeEventChannel enemyHurtEvent;
+    [SerializeField] private EnemyTypeEventChannel enemyHurtEvent;
     [SerializeField] private FloatEventChannel playHurtEvent;
     [SerializeField] private MaskTypeEventChannel maskChangeEvent;
     [SerializeField] private VoidEventChannel playerDeadEvent;
@@ -60,7 +60,7 @@ public class AudioManager : MonoBehaviour
         playHurtEvent.OnEvent += PlayerGrunt;
         enemyAttackEvent.OnEvent += EnemyAttackSound;
         explosionEvent.OnEvent += ExplosionSound;
-        //enemyHurtEvent.OnEvent += EnemyHurtSound;  
+        enemyHurtEvent.OnEvent += EnemyHurtSound;  
         maskChangeEvent.OnEvent += MaskChangeSound; // there is only 1 mask change sound affect
         punchAttackEvent.OnEvent += PunchAttackSound;
         spellAttackEvent.OnEvent += SpellAttackSound;
@@ -72,7 +72,7 @@ public class AudioManager : MonoBehaviour
         playerDeadEvent.OnEvent -= PlayerDeadSound;
         enemyAttackEvent.OnEvent -= EnemyAttackSound;
         explosionEvent.OnEvent -= ExplosionSound;
-        //enemyHurtEvent.OnEvent -= EnemyHurtSound;  
+        enemyHurtEvent.OnEvent -= EnemyHurtSound;  
         maskChangeEvent.OnEvent -= MaskChangeSound; // there is only 1 mask change sound affect
         punchAttackEvent.OnEvent -= PunchAttackSound;
         spellAttackEvent.OnEvent -= SpellAttackSound;
@@ -171,6 +171,19 @@ public class AudioManager : MonoBehaviour
         
     }
 
+    private void EnemyHurtSound(EnemyType type)
+    {
+        switch (type)
+        {
+            case EnemyType.Ranged:
+                FemaleGrunt();
+                break;
+            case EnemyType.Melee:
+                MaleGrunt();
+                break;
+        }
+    }
+    
     [ContextMenu("Play Female Grunt")]
     void FemaleGrunt()
     {
