@@ -15,7 +15,6 @@ public class PlayerHealthHandler : MonoBehaviour,IHealthComponent
 
     public void TakeDamage(int damageAmount, MaskType _)
     {
-        Debug.Log($"Player Taking {damageAmount} damage");
         _hp -= damageAmount;
         if(_hp <= 0)
         {

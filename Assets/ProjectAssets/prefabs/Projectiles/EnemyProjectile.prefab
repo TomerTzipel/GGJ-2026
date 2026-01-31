@@ -48,10 +48,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3849893907250386368, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3849893907250386368, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 4441649518601851529, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 4432154998788011634, guid: c86b9c8bbe7025444b726517e0f385e5, type: 3}
+    - target: {fileID: 4441649518601851529, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
+      propertyPath: m_Color.b
+      value: 0.74164605
+      objectReference: {fileID: 0}
+    - target: {fileID: 4441649518601851529, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
+      propertyPath: m_Color.g
+      value: 0.124599375
+      objectReference: {fileID: 0}
+    - target: {fileID: 4441649518601851529, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8805031
+      objectReference: {fileID: 0}
     - target: {fileID: 5052296933026699195, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
       propertyPath: isPlayerProjectile
       value: 0
@@ -64,6 +84,22 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 198a14f2a6bc55e489f67e16bd0b765c, type: 2}
+    - target: {fileID: 8193341969324475392, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
+      propertyPath: m_Size.x
+      value: 0.70464814
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193341969324475392, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
+      propertyPath: m_Size.y
+      value: 0.71799135
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193341969324475392, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.84203655
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193341969324475392, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0040721893
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

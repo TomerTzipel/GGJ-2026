@@ -19,4 +19,5 @@ public class PlayerSettings : ScriptableObject
     [field: SerializeField] public float AttackDuration { get; private set; }
     [field: SerializeField] public float AbilityCD { get; private set; }
     [field: SerializeField] public float AbilityDuration { get; private set; }
+    [field: SerializeField] public float AbilityHitboxDuration { get; private set; }
 }
