@@ -36,7 +36,7 @@ public class CooldownHandler : MonoBehaviour
     
     public void HandleMaskChanged(MaskType maskType)
     {
-        Sprite sprite = MaskSettings.GetSpriteByType(maskType);
+        Sprite sprite = MaskSettings.GetPlayerSpriteByType(maskType);
         maskImage.sprite = sprite;
     }
 

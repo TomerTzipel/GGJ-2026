@@ -19,7 +19,7 @@ public class MaskChangePoint : MonoBehaviour
 
     private void Start()
     {
-        _PointSpriteRenderer.sprite = MaskSettings.GetSpriteByType(_MyType);
+        _PointSpriteRenderer.sprite = MaskSettings.GetPlayerSpriteByType(_MyType);
         _changeMaskActionTime = new WaitForSeconds(_MaskChangeTimerReset);
     }
     private void Update()

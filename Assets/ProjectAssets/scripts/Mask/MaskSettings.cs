@@ -8,7 +8,9 @@ public enum MaskType { Green, Red, Blue }
 [Serializable]
 public struct MaskData
 {
-    public Sprite Sprite;
+    public Sprite PlayerMaskSprite;
+    public Sprite MaleMaskSprite;
+    public Sprite FemaleMaskSprite;
     public ProjectileHandler ProjectilePrefab;
 }
 
@@ -34,9 +36,17 @@ public class MaskSettings : MonoBehaviour
     {
         return _maskDictionary[type];
     }
-    public static Sprite GetSpriteByType(MaskType type)
+    public static Sprite GetPlayerSpriteByType(MaskType type)
     {
-        return _maskDictionary[type].Sprite;
+        return _maskDictionary[type].PlayerMaskSprite;
+    }
+    public static Sprite GetFemaleSpriteByType(MaskType type)
+    {
+        return _maskDictionary[type].FemaleMaskSprite;
+    }
+    public static Sprite GetMaleSpriteByType(MaskType type)
+    {
+        return _maskDictionary[type].MaleMaskSprite;
     }
 
 }
