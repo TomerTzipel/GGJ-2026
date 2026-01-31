@@ -10,24 +10,32 @@ public class CooldownHandler : MonoBehaviour
     [SerializeField]TMP_Text cooldownText;
     [SerializeField]Image cooldownImage;
     [SerializeField] MaskTypeEventChannel maskChangedEC;
-
+    [SerializeField] MaskTypeEventChannel playerUsedAbility;
+    [SerializeField] PlayerSettings settings;
     private float _timeLeft;
 
     private void OnEnable()
     {
         maskChangedEC.OnEvent += HandleMaskChanged;
+        playerUsedAbility.OnEvent += RunAbiltiyCooldown;
     }
 
     private void OnDisable()
     {
         maskChangedEC.OnEvent -= HandleMaskChanged;
+        playerUsedAbility.OnEvent -= RunAbiltiyCooldown;
     }
 [ContextMenu("HandleMaskChanged")]
     private void Start()
     {
-        StartCooldown(90);
+        //StartCooldown(90);
     }
     //↑ just to test ↑
+
+    private void RunAbiltiyCooldown(MaskType _)
+    {
+        StartCooldown(settings.AbilityCD);
+    }
 
     public void StartCooldown(float cooldown)
     {
