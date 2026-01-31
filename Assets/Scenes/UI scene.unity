@@ -432,8 +432,11 @@ MonoBehaviour:
   _MaskTypes: 000000000100000002000000
   _MaskData:
   - Sprite: {fileID: 21300000, guid: 6e99e7514eeed0b4c936e1120c0240f6, type: 3}
+    ProjectilePrefab: {fileID: 0}
   - Sprite: {fileID: 21300000, guid: 3a75092a4a06df54e8514902ca54730b, type: 3}
+    ProjectilePrefab: {fileID: 0}
   - Sprite: {fileID: 21300000, guid: afe3e20ae23713a48b2dd194d66e7e17, type: 3}
+    ProjectilePrefab: {fileID: 0}
 --- !u!4 &357310724
 Transform:
   m_ObjectHideFlags: 0
