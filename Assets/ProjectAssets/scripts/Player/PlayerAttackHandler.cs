@@ -13,6 +13,7 @@ public class PlayerAttackHandler : MonoBehaviour
     [SerializeField] private ProjectileHandler projectilePrefab;
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private Camera mainCamera;
+    [SerializeField] private SpriteRenderer maskRenderer;
 
     [SerializeField] private PlayerMovementHandler movementHandler;
     public bool CanAttack { get; set; } = true;
@@ -83,9 +84,13 @@ public class PlayerAttackHandler : MonoBehaviour
     private void Attack()
     { 
         CanAttack = false;
-        movementHandler.CanMove = false;
-        movementHandler.CanDash = false;
+        EnableMovement(false);
         _currentAttackHitbox = Instantiate(hitboxPrefab,spawnPoint.position,Quaternion.identity);
+
+        float angle = Mathf.Atan2(_attackDirection.y, _attackDirection.x) * Mathf.Rad2Deg;
+        _currentAttackHitbox.transform.eulerAngles = new Vector3(0f, 0f, angle);
+
+        _currentAttackHitbox.LifeTime = settings.AttackDuration;
         _currentAttackHitbox.CurrentMask = _currentMask;
         StartCoroutine(AttackDuration(settings.AttackDuration));
         StartCoroutine(AttackCooldown(settings.AttackCD));
@@ -94,8 +99,7 @@ public class PlayerAttackHandler : MonoBehaviour
     private void FireProjectile()
     {
         CanAbility = false;
-        movementHandler.CanMove = false;
-        movementHandler.CanDash = false;
+        EnableMovement(false);
 
         ProjectileHandler projectile = Instantiate(MaskSettings.GetDataByType(_currentMask).ProjectilePrefab, spawnPoint.position, Quaternion.identity);
         projectile.MoveDirection = _attackDirection;
@@ -109,6 +113,7 @@ public class PlayerAttackHandler : MonoBehaviour
     private void HandleMaskChange(MaskType type)
     {
         _currentMask = type;
+        maskRenderer.sprite = MaskSettings.GetSpriteByType(type);
     }
 
     private IEnumerator AttackCooldown(float duration)
@@ -125,14 +130,17 @@ public class PlayerAttackHandler : MonoBehaviour
     private IEnumerator AttackDuration(float duration)
     {
         yield return new WaitForSeconds(duration);
-        Destroy(_currentAttackHitbox.gameObject);
-        movementHandler.CanMove = true;
-        movementHandler.CanDash = true;
+        EnableMovement(true);
     }
     private IEnumerator AbilityDuration(float duration)
     {
         yield return new WaitForSeconds(duration);
-        movementHandler.CanMove = true;
-        movementHandler.CanDash = true;
+        EnableMovement(true);
+    }
+
+    private void EnableMovement(bool value)
+    {
+        //movementHandler.CanMove = value;
+        //movementHandler.CanDash = value;
     }
 }

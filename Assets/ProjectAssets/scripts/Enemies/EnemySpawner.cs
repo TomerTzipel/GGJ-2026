@@ -51,9 +51,10 @@ public class EnemySpawner : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(_spawnInterval);
+          
             _Animator.SetTrigger("ToggleOpen");
-            SpawnRandom();    
+            SpawnRandom();
+            yield return new WaitForSeconds(_spawnInterval);
         }
     }
 
@@ -62,30 +63,19 @@ public class EnemySpawner : MonoBehaviour
         int spawnAmount = _spawnAmount;
         while (spawnAmount > 0)
         {
-            yield return new WaitForSeconds(_spawnInterval);
+           
             _Animator.SetTrigger("ToggleOpen");
             SpawnRandom();   
             spawnAmount--;
+            yield return new WaitForSeconds(_spawnInterval);
         }
     }
 
     private void SpawnRandom()
     {
-        int chosen = Random.Range(0, 2);
-        EnemyType typeToSpawn = (EnemyType)chosen;
-        switch (typeToSpawn)
-        {
-            case EnemyType.Melee:
-                Instantiate(_MeleeEnemyPrefab, transform.position + _SpawnOffset, Quaternion.identity);
-                break;
-            case EnemyType.Ranged:
-                Instantiate(_RangeEnemyPrefab, transform.position + _SpawnOffset, Quaternion.identity);
-                break;
-            default:
-                Debug.LogWarning("Unknown enemy type, no spawn");
-                break;
-        }
-
+        int chosen = Random.Range(0, 4);
+        if(chosen == 0) Instantiate(_RangeEnemyPrefab, transform.position + _SpawnOffset, Quaternion.identity);
+        else Instantiate(_MeleeEnemyPrefab, transform.position + _SpawnOffset, Quaternion.identity);
     }
 
 }
