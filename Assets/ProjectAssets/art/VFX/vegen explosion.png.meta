@@ -1,0 +1,316 @@
+fileFormatVersion: 2
+guid: f13ed569ad3f67e4789db827f94a684a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8773231681184929352
+    second: vegen explosion_0
+  - first:
+      213: -5307297240251752977
+    second: vegen explosion_1
+  - first:
+      213: 2733406205118241097
+    second: vegen explosion_2
+  - first:
+      213: 2813449031599739598
+    second: vegen explosion_3
+  - first:
+      213: 5535135206195514922
+    second: vegen explosion_4
+  - first:
+      213: 167147712370343472
+    second: vegen explosion_5
+  - first:
+      213: -8737514714996605982
+    second: vegen explosion_6
+  - first:
+      213: -6979221291119056546
+    second: vegen explosion_7
+  - first:
+      213: 6956736098461541118
+    second: vegen explosion_8
+  - first:
+      213: 2573975451821614154
+    second: vegen explosion_9
+  - first:
+      213: -5985003043070967907
+    second: vegen explosion_10
+  - first:
+      213: 4472711439942464876
+    second: vegen explosion_11
+  - first:
+      213: 4296376556918756653
+    second: vegen explosion_12
+  - first:
+      213: 3299449806283198524
+    second: vegen explosion_13
+  - first:
+      213: 4038389218806940314
+    second: vegen explosion_14
+  - first:
+      213: 7001609015570096825
+    second: vegen explosion_15
+  - first:
+      213: 1456591817186481978
+    second: vegen explosion_16
+  - first:
+      213: -476981341624099025
+    second: vegen explosion_17
+  - first:
+      213: 8193750958041016247
+    second: vegen explosion_18
+  - first:
+      213: 8161277456348484248
+    second: vegen explosion_19
+  - first:
+      213: 5167543751875321591
+    second: vegen explosion_20
+  - first:
+      213: 5641846248854401420
+    second: vegen explosion_21
+  - first:
+      213: -362387944235467160
+    second: vegen explosion_22
+  - first:
+      213: 2211776708341735763
+    second: vegen explosion_23
+  - first:
+      213: -1988356621545571460
+    second: vegen explosion_24
+  - first:
+      213: -2137804797836547324
+    second: vegen explosion_25
+  - first:
+      213: 4412870344179838481
+    second: vegen explosion_26
+  - first:
+      213: 4030960664750756449
+    second: vegen explosion_27
+  - first:
+      213: 554134817927745971
+    second: vegen explosion_28
+  - first:
+      213: 3221242589923622373
+    second: vegen explosion_29
+  - first:
+      213: -6552175573020155764
+    second: vegen explosion_30
+  - first:
+      213: -2697135302652438685
+    second: vegen explosion_31
+  - first:
+      213: 699896094707778092
+    second: vegen explosion_32
+  - first:
+      213: 5272753816866895456
+    second: vegen explosion_33
+  - first:
+      213: 1166114317347987067
+    second: vegen explosion_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vegen explosion_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8461b314bb7c0c970800000000000000
+      internalID: 8773231681184929352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegen explosion_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fed126d7741b856b0800000000000000
+      internalID: -5307297240251752977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegen explosion_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 949dbea16720fe520800000000000000
+      internalID: 2733406205118241097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegen explosion_3
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec25b2aecf06b0720800000000000000
+      internalID: 2813449031599739598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 78e45db2a5148a248b51355ad78cbe57
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":2.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      vegen explosion_0: 8773231681184929352
+      vegen explosion_1: -5307297240251752977
+      vegen explosion_2: 2733406205118241097
+      vegen explosion_3: 2813449031599739598
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

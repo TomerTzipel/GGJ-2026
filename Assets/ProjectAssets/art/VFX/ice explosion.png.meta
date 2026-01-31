@@ -1,0 +1,292 @@
+fileFormatVersion: 2
+guid: ee66be26cfe996f46b85920ed36c17e9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3215235559124061549
+    second: ice explosion_0
+  - first:
+      213: 2481887023382555912
+    second: ice explosion_1
+  - first:
+      213: 5030203753633626284
+    second: ice explosion_2
+  - first:
+      213: 7147765142947629645
+    second: ice explosion_3
+  - first:
+      213: 1660889869119708674
+    second: ice explosion_4
+  - first:
+      213: 4283930562032337044
+    second: ice explosion_5
+  - first:
+      213: 5658167662873326485
+    second: ice explosion_6
+  - first:
+      213: -2890369156815191192
+    second: ice explosion_7
+  - first:
+      213: -5631390539208180876
+    second: ice explosion_8
+  - first:
+      213: 5167366674994041492
+    second: ice explosion_9
+  - first:
+      213: 3603676196620815184
+    second: ice explosion_10
+  - first:
+      213: -4970962154313822570
+    second: ice explosion_11
+  - first:
+      213: -8209771300478386702
+    second: ice explosion_12
+  - first:
+      213: -1720652093908603991
+    second: ice explosion_13
+  - first:
+      213: 679922950992963887
+    second: ice explosion_14
+  - first:
+      213: -2699538925723646913
+    second: ice explosion_15
+  - first:
+      213: 5851507938707013278
+    second: ice explosion_16
+  - first:
+      213: -5720124589589089406
+    second: ice explosion_17
+  - first:
+      213: -1797219579850131208
+    second: ice explosion_18
+  - first:
+      213: -5180480886112780361
+    second: ice explosion_19
+  - first:
+      213: 277020258412422495
+    second: ice explosion_20
+  - first:
+      213: -8669369047401858996
+    second: ice explosion_21
+  - first:
+      213: -758230752627110686
+    second: ice explosion_22
+  - first:
+      213: -2652273105589851903
+    second: ice explosion_23
+  - first:
+      213: 1771198102038647589
+    second: ice explosion_24
+  - first:
+      213: -7498498239769193953
+    second: ice explosion_25
+  - first:
+      213: 8071514115320860156
+    second: ice explosion_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ice explosion_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 392b4354b403163d0800000000000000
+      internalID: -3215235559124061549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice explosion_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80d6e51291f617220800000000000000
+      internalID: 2481887023382555912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice explosion_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca83b2ba9afdec540800000000000000
+      internalID: 5030203753633626284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice explosion_3
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4a005be686f13360800000000000000
+      internalID: 7147765142947629645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 87b78a5cdda686f4f9ba86a85d75c9e6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":2.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      ice explosion_0: -3215235559124061549
+      ice explosion_1: 2481887023382555912
+      ice explosion_2: 5030203753633626284
+      ice explosion_3: 7147765142947629645
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

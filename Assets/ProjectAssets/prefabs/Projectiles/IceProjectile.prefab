@@ -80,6 +80,10 @@ PrefabInstance:
       propertyPath: MaskType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9136393980506755638, guid: 23762cc676f6a63439cda1f433594e8a, type: 3}
+      propertyPath: aoePrefab
+      value: 
+      objectReference: {fileID: 8644458379397576847, guid: 0d3a00d6ba377db428ed1858e9210ce7, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

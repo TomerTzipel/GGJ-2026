@@ -49,7 +49,7 @@ MonoBehaviour:
   moveSpeed: 8
   lifeTime: 3
   MaskType: 0
-  aoePrefab: {fileID: 8365864390262711448, guid: 6dc7533d385ffb64fa5fe7cb0edd3c4a, type: 3}
+  aoePrefab: {fileID: 8713145603807231107, guid: ef2447f45f7c14b48b91ad45df1d48b1, type: 3}
   isPlayerProjectile: 1
 --- !u!61 &8193341969324475392
 BoxCollider2D:

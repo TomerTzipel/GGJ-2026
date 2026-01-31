@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: MaskType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5052296933026699195, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
+      propertyPath: aoePrefab
+      value: 
+      objectReference: {fileID: 8365864390262711448, guid: 6dc7533d385ffb64fa5fe7cb0edd3c4a, type: 3}
     - target: {fileID: 5398150170380500913, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
       propertyPath: m_Name
       value: FireProjectile
