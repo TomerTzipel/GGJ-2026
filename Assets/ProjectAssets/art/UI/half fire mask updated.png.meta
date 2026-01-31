@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 17513d9ce77cbeb42a9342ecdd7165f4
+guid: 8718f604495c1d64884caee7b174a5bc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5707886208752816877
-    second: half fire mask_0
+      213: 3592143342174092648
+    second: half fire mask updated_0
   - first:
-      213: -6818321903213411572
-    second: half fire mask_1
+      213: -1761410478443792920
+    second: half fire mask updated_1
   - first:
-      213: 3398790050230501840
-    second: half fire mask_2
-  - first:
-      213: 6717977699749173236
-    second: half fire mask_3
+      213: 7377781797161130682
+    second: half fire mask updated_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 600
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,12 +106,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: half fire mask_0
+      name: half fire mask updated_0
       rect:
         serializedVersion: 2
-        x: 1385
-        y: 632
-        width: 1175
+        x: 113
+        y: 108
+        width: 1173
         height: 744
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,18 +121,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 31defec1cb389c0b0800000000000000
-      internalID: -5707886208752816877
+      spriteID: 86d3294765bd9d130800000000000000
+      internalID: 3592143342174092648
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: half fire mask_1
+      name: half fire mask updated_1
       rect:
         serializedVersion: 2
-        x: 2470
-        y: 1363
+        x: 1198
+        y: 839
         width: 27
         height: 16
       alignment: 0
@@ -146,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c0303b2aa547061a0800000000000000
-      internalID: -6818321903213411572
+      spriteID: 8e5f4b090863e87e0800000000000000
+      internalID: -1761410478443792920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: half fire mask_2
+      name: half fire mask updated_2
       rect:
         serializedVersion: 2
-        x: 1370
-        y: 1023
+        x: 102
+        y: 489
         width: 8
-        height: 24
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,30 +165,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0d10f1a0b8dea2f20800000000000000
-      internalID: 3398790050230501840
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: half fire mask_3
-      rect:
-        serializedVersion: 2
-        x: 1373
-        y: 1013
-        width: 9
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4f79b82ef1d0b3d50800000000000000
-      internalID: 6717977699749173236
+      spriteID: abad1229475236660800000000000000
+      internalID: 7377781797161130682
       vertices: []
       indices: 
       edges: []
@@ -210,10 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      half fire mask_0: -5707886208752816877
-      half fire mask_1: -6818321903213411572
-      half fire mask_2: 3398790050230501840
-      half fire mask_3: 6717977699749173236
+      half fire mask updated_0: 3592143342174092648
+      half fire mask updated_1: -1761410478443792920
+      half fire mask updated_2: 7377781797161130682
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

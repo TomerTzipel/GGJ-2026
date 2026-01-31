@@ -11,6 +11,7 @@ public struct MaskData
     public Sprite PlayerMaskSprite;
     public Sprite MaleMaskSprite;
     public Sprite FemaleMaskSprite;
+    public Sprite ShrineSprite;
     public ProjectileHandler ProjectilePrefab;
 }
 
@@ -48,5 +49,8 @@ public class MaskSettings : MonoBehaviour
     {
         return _maskDictionary[type].MaleMaskSprite;
     }
-
+    public static Sprite GetShrineSpriteByType(MaskType type)
+    {
+        return _maskDictionary[type].ShrineSprite;
+    }
 }

@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 17101e13f0458d647a6609df529abb2e
+guid: 90b991fced0986a409164edd14f0f129
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2565053938264589330
-    second: half ice mask_0
-  - first:
-      213: 7459290517478811297
-    second: half ice mask_1
-  - first:
-      213: 5861975390972983212
-    second: half ice mask_2
+      213: 1364019325927043756
+    second: half nature mask updated_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 600
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,67 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: half ice mask_0
+      name: half nature mask updated_0
       rect:
         serializedVersion: 2
-        x: 1422
-        y: 799
-        width: 27
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 103
+        y: 109
+        width: 1114
+        height: 616
+      alignment: 9
+      pivot: {x: 0.54010934, y: 0.592684}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2144af377f6e89320800000000000000
-      internalID: 2565053938264589330
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: half ice mask_1
-      rect:
-        serializedVersion: 2
-        x: 1387
-        y: 18
-        width: 1105
-        height: 770
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1a6a3c26439b48760800000000000000
-      internalID: 7459290517478811297
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: half ice mask_2
-      rect:
-        serializedVersion: 2
-        x: 1461
-        y: 769
-        width: 15
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ca7b60d5f8be95150800000000000000
-      internalID: 5861975390972983212
+      spriteID: ca236ac9958fde210800000000000000
+      internalID: 1364019325927043756
       vertices: []
       indices: 
       edges: []
@@ -175,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4c3cba597a04fca4eb2a464fa4eac61a
     internalID: 0
     vertices: []
     indices: 
@@ -183,11 +133,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      half ice mask_0: 2565053938264589330
-      half ice mask_1: 7459290517478811297
-      half ice mask_2: 5861975390972983212
+      half nature mask updated_0: 1364019325927043756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
