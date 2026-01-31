@@ -8,7 +8,7 @@ public class ProjectileHandler : MonoBehaviour
     [SerializeField] private MaskType MaskType;
     [SerializeField] private AOEHandler aoePrefab;
     [SerializeField] private bool isPlayerProjectile;
-
+   
     public Vector2 MoveDirection { get; set; }
     public int Damage { get; set; }
 
@@ -17,6 +17,7 @@ public class ProjectileHandler : MonoBehaviour
         float angle = Mathf.Atan2(MoveDirection.y, MoveDirection.x) * Mathf.Rad2Deg;
         transform.eulerAngles = new Vector3(0f, 0f, angle);
         StartCoroutine(LifeTime(lifeTime));
+        
     }
 
     private void Update()
@@ -39,7 +40,8 @@ public class ProjectileHandler : MonoBehaviour
         {
             GenerateAOE();        
         }
-    }
+    }  
+
     private IEnumerator LifeTime(float duration)
     {
         yield return new WaitForSeconds(duration);

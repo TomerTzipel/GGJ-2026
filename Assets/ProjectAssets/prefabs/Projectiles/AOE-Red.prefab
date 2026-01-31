@@ -50,6 +50,8 @@ MonoBehaviour:
   aoeSpawnedEC: {fileID: 11400000, guid: cbc4c61dc4d7fd74f99c41f7fed01e8f, type: 2}
   maskType: 1
   duration: 2
+  hitbox: {fileID: 240002319468990047}
+  settings: {fileID: 11400000, guid: 3455283ca71e0164fa5c29861e90805b, type: 2}
 --- !u!212 &5462747411754464431
 SpriteRenderer:
   serializedVersion: 2

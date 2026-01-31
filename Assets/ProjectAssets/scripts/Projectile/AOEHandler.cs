@@ -1,16 +1,19 @@
 using System.Collections;
 using UnityEngine;
 
+
 public class AOEHandler : MonoBehaviour
 {
     [SerializeField] MaskTypeEventChannel aoeSpawnedEC;
     [SerializeField] MaskType maskType;
     [SerializeField] float duration;
-
+    [SerializeField] private Collider2D hitbox;
+    [SerializeField] private PlayerSettings settings;
     public int Damage { get; set; }
 
     private void Awake()
     {
+        StartCoroutine(HitboxLifetime(settings.AbilityHitboxDuration));
         StartCoroutine(Duration());
     }
 
@@ -27,6 +30,11 @@ public class AOEHandler : MonoBehaviour
         {
             health.TakeDamage(Damage,maskType);
         }
+    }
+    private IEnumerator HitboxLifetime(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        hitbox.enabled = false;
     }
 
     private IEnumerator Duration()

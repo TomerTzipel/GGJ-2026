@@ -7,11 +7,10 @@ public class PlayerAttackHitbox : MonoBehaviour
     public MaskType CurrentMask { get; set; }
     public float LifeTime { get; set; }
     [SerializeField] private PlayerSettings settings;
-    [SerializeField] private Collider2D hitbox;
+  
 
     private void Start()
     {
-        StartCoroutine(HitboxLifetime(settings.AbilityHitboxDuration));
         StartCoroutine(LifeTimeCoroutine(LifeTime));
     }
 
@@ -31,10 +30,5 @@ public class PlayerAttackHitbox : MonoBehaviour
         yield return new WaitForSeconds(duration);
         Destroy(gameObject);
     }
-    private IEnumerator HitboxLifetime(float duration)
-    {
-        yield return new WaitForSeconds(duration);
-        hitbox.enabled = false;
-    }
-
+  
 }

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa84ee728ed00144aa4be0d856dc603, type: 3}
   m_Name: PlayerSettings
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSettings
+  <StartingMask>k__BackingField: 0
   <MaxHP>k__BackingField: 100
   <MoveSpeed>k__BackingField: 10
   <DashSpeed>k__BackingField: 20
@@ -22,4 +23,5 @@ MonoBehaviour:
   <AttackCD>k__BackingField: 1
   <AttackDuration>k__BackingField: 0.5
   <AbilityCD>k__BackingField: 0
-  <AbilityDuration>k__BackingField: 0
+  <AbilityDuration>k__BackingField: 2.3
+  <AbilityHitboxDuration>k__BackingField: 0.2
