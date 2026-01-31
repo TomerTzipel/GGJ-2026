@@ -19,30 +19,51 @@ public class EnemySpawner : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position + _SpawnOffset, 0.5f);
     }
 
-    public void SpawnEnemy(EnemyType typeToSpawn) { StartCoroutine(SpawnEnemyCoroutine(typeToSpawn)); }
+    public void StartSpawning() 
+    {
+        if (_SpawnAmount < 0) { StartCoroutine(InfiniteSpawnCoroutine()); }
+        else { StartCoroutine(SpawnEnemyCoroutine()); }
+    }
 
-    private IEnumerator SpawnEnemyCoroutine(EnemyType typeToSpawn)
+    private IEnumerator InfiniteSpawnCoroutine()
+    {
+        while (true)
+        {
+            _Animator.SetTrigger("ToggleOpen");
+            SpawnRandom();
+            yield return _waitForSpawnInterval;
+        }
+    }
+
+    private IEnumerator SpawnEnemyCoroutine()
     {
         int spawnAmount = _SpawnAmount;
         while (spawnAmount > 0)
         {
             _Animator.SetTrigger("ToggleOpen");
-            switch (typeToSpawn)
-            {
-                case EnemyType.Melee:
-                    Instantiate(_MeleeEnemyPrefab, transform.position + _SpawnOffset, Quaternion.identity);
-                    break;
-                case EnemyType.Ranged:
-                    Instantiate(_RangeEnemyPrefab, transform.position + _SpawnOffset, Quaternion.identity);
-                    break;
-                default:
-                    Debug.LogWarning("Unknown enemy type, no spawn");
-                    break;
-            }
-
+            SpawnRandom();
             yield return _waitForSpawnInterval;
             spawnAmount--;
         }
+    }
+
+    private void SpawnRandom()
+    {
+        int chosen = Random.Range(0, 2);
+        EnemyType typeToSpawn = (EnemyType)chosen;
+        switch (typeToSpawn)
+        {
+            case EnemyType.Melee:
+                Instantiate(_MeleeEnemyPrefab, transform.position + _SpawnOffset, Quaternion.identity);
+                break;
+            case EnemyType.Ranged:
+                Instantiate(_RangeEnemyPrefab, transform.position + _SpawnOffset, Quaternion.identity);
+                break;
+            default:
+                Debug.LogWarning("Unknown enemy type, no spawn");
+                break;
+        }
+
     }
 
 }
