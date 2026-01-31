@@ -4,15 +4,14 @@ public class SpawnManager : MonoBehaviour
 {
     [SerializeField] private EnemySpawner[] _EnemySpawners;
 
-    private void OnEnable()
+    private void Start()
     {
-        //make type precentage based
-        ActivateSpawners(EnemyType.Melee);
+        ActivateSpawners();
     }
 
-    public void ActivateSpawners(EnemyType typeToSpawn)
+    public void ActivateSpawners()
     {
-        foreach (EnemySpawner spawner in _EnemySpawners) { spawner.SpawnEnemy(typeToSpawn); }
+        foreach (EnemySpawner spawner in _EnemySpawners) { spawner.StartSpawning(); }
     }
 
 }

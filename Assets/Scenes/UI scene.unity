@@ -347,11 +347,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4962734392837041229, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
       propertyPath: _SpawnAmount
-      value: 20
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4962734392837041229, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
       propertyPath: _SpawnInterval
-      value: 0.2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5415457605562990071, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
       propertyPath: m_LocalPosition.x
@@ -411,11 +411,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6919392219308333684, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
       propertyPath: _SpawnAmount
-      value: 20
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919392219308333684, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
+      propertyPath: _SpawnInterval
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7235693783344841774, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
       propertyPath: _SpawnAmount
-      value: 20
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7235693783344841774, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
+      propertyPath: _SpawnInterval
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8069926945956498382, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
       propertyPath: m_LocalPosition.x
