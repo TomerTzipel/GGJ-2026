@@ -3,8 +3,23 @@ using UnityEngine.UI;
 
 public class SliderHandler : MonoBehaviour
 {
-    
+    [SerializeField] private FloatEventChannel playerHurtEC;
     [SerializeField] private Slider slider;
+
+    private void OnEnable()
+    {
+        playerHurtEC.OnEvent += HandlePlayerHurt;
+    }
+    private void OnDisable()
+    {
+        playerHurtEC.OnEvent -= HandlePlayerHurt;
+    }
+
+
+    private void HandlePlayerHurt(float value)
+    {
+        ModifySlider(value);
+    }
 
     [ContextMenu("SetValue")]
     public void SetHalf()
@@ -14,7 +29,7 @@ public class SliderHandler : MonoBehaviour
     // ↑ just to test ↑
     
     
-    public void ModifySlider(float value)
+    private void ModifySlider(float value)
     {
         slider.value = value;
     }

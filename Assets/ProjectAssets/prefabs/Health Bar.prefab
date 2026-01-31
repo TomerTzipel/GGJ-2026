@@ -132,7 +132,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -176,6 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ced761f8a87e69548901c51c03ed26d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  playerHurtEC: {fileID: 11400000, guid: e5fd1fc5108f0a64fa34745075c67919, type: 2}
   slider: {fileID: 6150890936051581222}
 --- !u!1 &5690350730675022793
 GameObject:

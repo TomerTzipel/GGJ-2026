@@ -22,6 +22,6 @@ public class PlayerHealthHandler : MonoBehaviour,IHealthComponent
             playerDeathEC.RaiseEvent();
         }
 
-        playerHurtEC.RaiseEvent(_hp/settings.MaxHP);
+        playerHurtEC.RaiseEvent((float)_hp/settings.MaxHP);
     }
 }
