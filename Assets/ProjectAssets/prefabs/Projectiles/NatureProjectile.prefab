@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileHandler
   moveSpeed: 8
-  lifeTime: 3
+  lifeTime: 1
   MaskType: 0
   aoePrefab: {fileID: 8713145603807231107, guid: ef2447f45f7c14b48b91ad45df1d48b1, type: 3}
   isPlayerProjectile: 1

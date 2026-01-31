@@ -49,8 +49,8 @@ MonoBehaviour:
   MaskChangeEC: {fileID: 11400000, guid: 30914ee8483595b438920cba3ff76544, type: 2}
   _PointSpriteRenderer: {fileID: 2219987410128763056}
   _MyType: 0
-  _MaskChangeTimer: 3.5
-  _MaskChangeTimerReset: 2
+  _MaskChangeTimer: 0.8
+  _MaskChangeTimerReset: 5
 --- !u!58 &5716837503022960106
 CircleCollider2D:
   m_ObjectHideFlags: 0

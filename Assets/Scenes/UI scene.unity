@@ -345,6 +345,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaveManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6283529840495839452, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
+      propertyPath: _SpawnInterval
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6283529840495839452, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
+      propertyPath: _SpawnIntervalLoweringAmount
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6283529840495839452, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
+      propertyPath: _SpawnIntervalLoweringInterval
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6334478777924955820, guid: d98cf89e453e3db4a93b4be6ac02d959, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3446,46 +3458,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
-    - target: {fileID: 6088610234016002053, guid: e3d277f4592793e48855f7ff4b355ae2, type: 3}
-      propertyPath: dashEvent
-      value: 
-      objectReference: {fileID: 11400000, guid: 1f514ffa8bf21504c9bb1d089dfc0ce0, type: 2}
-    - target: {fileID: 6088610234016002053, guid: e3d277f4592793e48855f7ff4b355ae2, type: 3}
-      propertyPath: doorOpenEvent
-      value: 
-      objectReference: {fileID: 11400000, guid: d25ae249127d9b847b8171e9757cb211, type: 2}
-    - target: {fileID: 6088610234016002053, guid: e3d277f4592793e48855f7ff4b355ae2, type: 3}
-      propertyPath: playHurtEvent
-      value: 
-      objectReference: {fileID: 11400000, guid: e5fd1fc5108f0a64fa34745075c67919, type: 2}
-    - target: {fileID: 6088610234016002053, guid: e3d277f4592793e48855f7ff4b355ae2, type: 3}
-      propertyPath: enemyHurtEvent
-      value: 
-      objectReference: {fileID: 11400000, guid: d380ae067fe803a4499417e108bd96a4, type: 2}
-    - target: {fileID: 6088610234016002053, guid: e3d277f4592793e48855f7ff4b355ae2, type: 3}
-      propertyPath: explosionEvent
-      value: 
-      objectReference: {fileID: 11400000, guid: cbc4c61dc4d7fd74f99c41f7fed01e8f, type: 2}
-    - target: {fileID: 6088610234016002053, guid: e3d277f4592793e48855f7ff4b355ae2, type: 3}
-      propertyPath: maskChangeEvent
-      value: 
-      objectReference: {fileID: 11400000, guid: 30914ee8483595b438920cba3ff76544, type: 2}
-    - target: {fileID: 6088610234016002053, guid: e3d277f4592793e48855f7ff4b355ae2, type: 3}
-      propertyPath: playerDeadEvent
-      value: 
-      objectReference: {fileID: 11400000, guid: ab001f2ac8ecbbb499326c74eba0cfd7, type: 2}
-    - target: {fileID: 6088610234016002053, guid: e3d277f4592793e48855f7ff4b355ae2, type: 3}
-      propertyPath: enemyAttackEvent
-      value: 
-      objectReference: {fileID: 11400000, guid: b94213f8e7a30084d8cfce6d67f130c3, type: 2}
-    - target: {fileID: 6088610234016002053, guid: e3d277f4592793e48855f7ff4b355ae2, type: 3}
-      propertyPath: punchAttackEvent
-      value: 
-      objectReference: {fileID: 11400000, guid: 2a4901b371ae04940b92d05366c77576, type: 2}
-    - target: {fileID: 6088610234016002053, guid: e3d277f4592793e48855f7ff4b355ae2, type: 3}
-      propertyPath: spellAttackEvent
-      value: 
-      objectReference: {fileID: 11400000, guid: dcf292eabee67ad45935989ad030f020, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
