@@ -3,6 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PlayerSettings", menuName = "Scriptable Objects/PlayerSettings")]
 public class PlayerSettings : ScriptableObject
 {
+    [field: SerializeField] public MaskType StartingMask { get; private set; }
     [field: SerializeField] public int MaxHP { get; private set; }
 
     [Header("Movement Settings")]

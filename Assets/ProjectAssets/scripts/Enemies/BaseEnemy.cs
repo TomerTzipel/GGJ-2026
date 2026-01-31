@@ -53,20 +53,42 @@ public class BaseEnemy : MonoBehaviour, IHealthComponent
         if (collision.gameObject.CompareTag("Player"))
         {
             if (collision.transform.TryGetComponent(out IHealthComponent playerHealth))
-                playerHealth.TakeDamage(_attackDamage);
+                playerHealth.TakeDamage(_attackDamage, _myMaskType);
 
             if (_myEnemyType == EnemyType.Melee) { ChangeState(EnemyState.Idle); }
         }
     }
 
-    public void TakeDamage(int damageAmount)
+    public void TakeDamage(int damageAmount, MaskType playerMask)
     {
         enemyHurtEC.RaiseEvent(_myEnemyType);
+        damageAmount = (int)CalculateDamage(damageAmount, playerMask);
         int calculatedHP = _currentHealth - damageAmount;
-        Debug.Log($"Enemy {gameObject.name} Taking {damageAmount} damage, HP left {calculatedHP}");
 
         if (calculatedHP <= 0) { _currentHealth = 0; Die(); }
         else { _currentHealth = calculatedHP; }
+    }
+
+    private float CalculateDamage(int damageAmount, MaskType playerMask)
+    {
+        float mult = 1;
+
+        switch (playerMask)
+        {
+            case MaskType.Green:
+                if (_myMaskType == MaskType.Red) mult = 0.5f;
+                if (_myMaskType == MaskType.Blue) mult = 2;
+                break;
+            case MaskType.Red:
+                if (_myMaskType == MaskType.Blue) mult = 0.5f;
+                if (_myMaskType == MaskType.Green) mult = 2;
+                break;
+            case MaskType.Blue:
+                if (_myMaskType == MaskType.Green) mult = 0.5f;
+                if (_myMaskType == MaskType.Red) mult = 2;
+                break;
+        }
+        return damageAmount * mult;
     }
 
     protected virtual void UpdateAttack() { }

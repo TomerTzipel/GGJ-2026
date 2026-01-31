@@ -25,7 +25,12 @@ public class PlayerAttackHandler : MonoBehaviour
     void Awake()
     {
         _inputActions = new InputActions();
-        spawnPoint.transform.position = transform.position + transform.right * settings.Range;
+        spawnPoint.transform.position = transform.position + transform.right * settings.Range;    
+    }
+
+    private void Start()
+    {
+        MaskChangeEC.RaiseEvent(settings.StartingMask);
     }
     private void OnEnable()
     {

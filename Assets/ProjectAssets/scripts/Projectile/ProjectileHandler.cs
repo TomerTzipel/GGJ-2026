@@ -30,7 +30,7 @@ public class ProjectileHandler : MonoBehaviour
         {
             if(collision.TryGetComponent(out IHealthComponent health))
             {
-                health.TakeDamage(Damage);
+                health.TakeDamage(Damage, MaskType);
             }
        
         }

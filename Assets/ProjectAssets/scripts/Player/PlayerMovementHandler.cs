@@ -57,7 +57,8 @@ public class PlayerMovementHandler : MonoBehaviour
     private void FixedUpdate()
     {
         if (CanMove) Move();
-        if (_isDashing) Dash();       
+        if (_isDashing) Dash();    
+        rb.linearVelocity = Vector2.zero;
     }
 
     private void Move()
