@@ -7,9 +7,11 @@ public class BaseEnemy : MonoBehaviour, IHealthComponent
 {
     [Header("Events")]
     [SerializeField] protected PlayerPosition playerPosition;
+    [SerializeField] protected EnemyTypeEventChannel enemyHurtEC;
     [Header("Base Enemy Data")]
+    [SerializeField] protected MaskType _myMaskType;
     [SerializeField] private EnemyType _myEnemyType;
-    [SerializeField] private float _moveSpeed = 3f;
+    [SerializeField] protected float _moveSpeed = 3f;
     [SerializeField] private float _attackRange = 2f;
     [SerializeField] private float _attackCooldown = 0.75f;
     [SerializeField] protected int _attackDamage = 8;
@@ -20,7 +22,7 @@ public class BaseEnemy : MonoBehaviour, IHealthComponent
     private float _lastAttackTime;
     private int _currentHealth;
 
-    private void Awake() { _currentHealth = _maxHealth; _myRigidbody = GetComponent<Rigidbody2D>(); }
+    private void Awake() { _lastAttackTime = _attackCooldown; _currentHealth = _maxHealth; _myRigidbody = GetComponent<Rigidbody2D>(); }
     private void Start()
     {
         if (playerPosition == null) { ChangeState(EnemyState.Idle); return; }
@@ -50,8 +52,8 @@ public class BaseEnemy : MonoBehaviour, IHealthComponent
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            IHealthComponent playerHealth = GetComponent<IHealthComponent>();
-            if (playerHealth != null) playerHealth.TakeDamage(_attackDamage);
+            if (collision.transform.TryGetComponent(out IHealthComponent playerHealth))
+                playerHealth.TakeDamage(_attackDamage);
 
             if (_myEnemyType == EnemyType.Melee) { ChangeState(EnemyState.Idle); }
         }
@@ -59,19 +61,15 @@ public class BaseEnemy : MonoBehaviour, IHealthComponent
 
     public void TakeDamage(int damageAmount)
     {
-        Debug.Log($"Enemy Taking {damageAmount} damage");
+        enemyHurtEC.RaiseEvent(_myEnemyType);
         int calculatedHP = _currentHealth - damageAmount;
+        Debug.Log($"Enemy {gameObject.name} Taking {damageAmount} damage, HP left {calculatedHP}");
 
-        if (calculatedHP <= 0) { _currentHealth = 0; }
+        if (calculatedHP <= 0) { _currentHealth = 0; Die(); }
         else { _currentHealth = calculatedHP; }
     }
 
-    protected virtual void UpdateAttack()
-    {
-        Vector3 direction = (playerPosition.PlayerDelayedPosition - transform.position).normalized;
-
-        transform.position += direction * _moveSpeed * Time.deltaTime;
-    }
+    protected virtual void UpdateAttack() { }
     protected virtual void UpdateIdle()
     {
         _lastAttackTime -= Time.deltaTime;
@@ -90,7 +88,7 @@ public class BaseEnemy : MonoBehaviour, IHealthComponent
         }
     }
 
-    private void ChangeState(EnemyState wantedState)
+    protected void ChangeState(EnemyState wantedState)
     {
         if (_myCurrentState == wantedState) return;
 

@@ -91,6 +91,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RangeEnemy
   playerPosition: {fileID: 11400000, guid: a47d3aa0e7e795e4780f32849526e6ef, type: 2}
+  enemyHurtEC: {fileID: 11400000, guid: d380ae067fe803a4499417e108bd96a4, type: 2}
+  _myMaskType: 0
   _myEnemyType: 1
   _moveSpeed: 7
   _attackRange: 4
@@ -98,3 +100,4 @@ MonoBehaviour:
   _attackDamage: 10
   _maxHealth: 18
   projectilePrefab: {fileID: 8302572023587501422, guid: af9c323ebc643d0488b1d9b0f043657c, type: 3}
+  rangedEnemyAttackEC: {fileID: 11400000, guid: b94213f8e7a30084d8cfce6d67f130c3, type: 2}

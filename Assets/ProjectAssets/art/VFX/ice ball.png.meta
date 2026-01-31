@@ -1,0 +1,275 @@
+fileFormatVersion: 2
+guid: 731b0eaf5fed08742b2db874b380a1b8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7208565057855452806
+    second: ice ball_0
+  - first:
+      213: 6686702514208300819
+    second: ice ball_1
+  - first:
+      213: 8371648294544895789
+    second: ice ball_2
+  - first:
+      213: -8558059357588817546
+    second: ice ball_3
+  - first:
+      213: 922950520233633490
+    second: ice ball_4
+  - first:
+      213: -3178072285630780328
+    second: ice ball_5
+  - first:
+      213: -8802997283965907859
+    second: ice ball_6
+  - first:
+      213: 6644312006927768123
+    second: ice ball_7
+  - first:
+      213: -5154003909421745711
+    second: ice ball_8
+  - first:
+      213: -6198401923190644829
+    second: ice ball_9
+  - first:
+      213: -1959367415503575730
+    second: ice ball_10
+  - first:
+      213: 9128122059976149637
+    second: ice ball_11
+  - first:
+      213: 3906931152280420340
+    second: ice ball_12
+  - first:
+      213: 425991776858271463
+    second: ice ball_13
+  - first:
+      213: 3276372935425895415
+    second: ice ball_14
+  - first:
+      213: 7257355157591629628
+    second: ice ball_15
+  - first:
+      213: -9086553290091606792
+    second: ice ball_16
+  - first:
+      213: 62436912252680482
+    second: ice ball_17
+  - first:
+      213: 1603122415619835158
+    second: ice ball_18
+  - first:
+      213: 51166561629383019
+    second: ice ball_19
+  - first:
+      213: -4748131640546113147
+    second: ice ball_20
+  - first:
+      213: 8640282864369773207
+    second: ice ball_21
+  - first:
+      213: -8147010241229045809
+    second: ice ball_22
+  - first:
+      213: 6235623986298068258
+    second: ice ball_23
+  - first:
+      213: -6047163183689031783
+    second: ice ball_24
+  - first:
+      213: 8887211113660977055
+    second: ice ball_25
+  - first:
+      213: -7665405679068876595
+    second: ice ball_26
+  - first:
+      213: 5545452800477688488
+    second: ice ball_27
+  - first:
+      213: -4152164434965452469
+    second: ice ball_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ice ball_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1231
+        height: 770
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68674cd3ab7f90460800000000000000
+      internalID: 7208565057855452806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice ball_1
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 0
+        width: 1231
+        height: 770
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31fd81e4280fbcc50800000000000000
+      internalID: 6686702514208300819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice ball_2
+      rect:
+        serializedVersion: 2
+        x: 2462
+        y: 0
+        width: 1231
+        height: 770
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f6adcd4c11e2470800000000000000
+      internalID: 8371648294544895789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: af6fe0733f8dfbc468b7dd311c8fa86d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":1231.0,"y":770.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      ice ball_0: 7208565057855452806
+      ice ball_1: 6686702514208300819
+      ice ball_2: 8371648294544895789
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

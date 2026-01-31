@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class PlayerHealthHandler : MonoBehaviour,IHealthComponent
 {
+    [SerializeField] VoidEventChannel playerDeathEC;
+    [SerializeField] FloatEventChannel playerHurtEC;
     [SerializeField] PlayerSettings settings;
 
     private int _hp;
@@ -17,9 +19,9 @@ public class PlayerHealthHandler : MonoBehaviour,IHealthComponent
         _hp -= damageAmount;
         if(_hp <= 0)
         {
-            //death
+            playerDeathEC.RaiseEvent();
         }
 
-        //UI Update
+        playerHurtEC.RaiseEvent(_hp/settings.MaxHP);
     }
 }

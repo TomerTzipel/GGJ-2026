@@ -77,6 +77,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c162f0a5c94174883c058980a16fbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AttackHandler
+  playerAttackedEC: {fileID: 11400000, guid: 2a4901b371ae04940b92d05366c77576, type: 2}
+  playerAbilityEC: {fileID: 11400000, guid: dcf292eabee67ad45935989ad030f020, type: 2}
   MaskChangeEC: {fileID: 11400000, guid: 30914ee8483595b438920cba3ff76544, type: 2}
   settings: {fileID: 11400000, guid: 3455283ca71e0164fa5c29861e90805b, type: 2}
   hitboxPrefab: {fileID: 4347364786523425202, guid: b930561e4b00b5f4a94a3f897bab97c1, type: 3}
@@ -192,6 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d416aa1d19851a45826ef41d11d48ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovementHandler
+  playerDashedEC: {fileID: 11400000, guid: 1f514ffa8bf21504c9bb1d089dfc0ce0, type: 2}
   playerPosition: {fileID: 11400000, guid: a47d3aa0e7e795e4780f32849526e6ef, type: 2}
   rb: {fileID: 106603656480459839}
   attackHandler: {fileID: 8058994331830549054}
@@ -281,6 +284,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d455c98ea307f5b4bb707cfb77a15e74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealthHandler
+  playerDeathEC: {fileID: 11400000, guid: ab001f2ac8ecbbb499326c74eba0cfd7, type: 2}
+  playerHurtEC: {fileID: 11400000, guid: e5fd1fc5108f0a64fa34745075c67919, type: 2}
   settings: {fileID: 11400000, guid: 3455283ca71e0164fa5c29861e90805b, type: 2}
 --- !u!1 &7814954744157716911
 GameObject:

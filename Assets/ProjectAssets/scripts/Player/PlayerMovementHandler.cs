@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovementHandler : MonoBehaviour
 {
+    [SerializeField] private VoidEventChannel playerDashedEC;
     [SerializeField] private PlayerPosition playerPosition;
     [SerializeField] private Rigidbody2D rb;
 
@@ -91,6 +92,7 @@ public class PlayerMovementHandler : MonoBehaviour
         _isDashing = true;
         CanMove = false;
         CanDash = false;
+        playerDashedEC.RaiseEvent();
         StartCoroutine(DashDuration(settings.DashDuration));
     }
     private void FinishDashing()

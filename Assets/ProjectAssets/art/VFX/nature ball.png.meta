@@ -1,28 +1,52 @@
 fileFormatVersion: 2
-guid: 6de37013d05e24a49a2d00e30c37d2da
+guid: 652575e59e9ef79478f1008edfbfbf64
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7738873687719267283
-    second: fixed fire ball_0
+      213: -5186891335082116300
+    second: nature ball_0
   - first:
-      213: 8985509932993642338
-    second: fixed fire ball_1
+      213: 2745864795297049159
+    second: nature ball_1
   - first:
-      213: -4314033220688389334
-    second: fixed fire ball_2
+      213: 5546137141328880691
+    second: nature ball_2
   - first:
-      213: 8243014735895129851
-    second: fixed fire ball_3
+      213: 6743253793977946441
+    second: nature ball_3
   - first:
-      213: -8920068930677319565
-    second: fixed fire ball_4
+      213: -8106407938087262370
+    second: nature ball_4
   - first:
-      213: -1229823013442858647
-    second: fixed fire ball_5
+      213: -1818463164363459513
+    second: nature ball_5
   - first:
-      213: 7597018491973643869
-    second: fixed fire ball_6
+      213: -2913685423181789469
+    second: nature ball_6
+  - first:
+      213: 9150871135712436287
+    second: nature ball_7
+  - first:
+      213: -5348707832920116336
+    second: nature ball_8
+  - first:
+      213: -1841399419821936653
+    second: nature ball_9
+  - first:
+      213: 2959337622525170958
+    second: nature ball_10
+  - first:
+      213: 7297282715483280074
+    second: nature ball_11
+  - first:
+      213: -3208021062520251518
+    second: nature ball_12
+  - first:
+      213: -8998209137241226819
+    second: nature ball_13
+  - first:
+      213: -7799570350858687077
+    second: nature ball_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -69,7 +93,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -118,13 +142,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fixed fire ball_0
+      name: nature ball_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1537
-        height: 887
+        width: 1345
+        height: 993
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +157,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3dbcf1edd90066b60800000000000000
-      internalID: 7738873687719267283
+      spriteID: 43bf0e3efc57408b0800000000000000
+      internalID: -5186891335082116300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fixed fire ball_1
+      name: nature ball_1
       rect:
         serializedVersion: 2
-        x: 1537
+        x: 1345
         y: 0
-        width: 1537
-        height: 887
+        width: 1345
+        height: 993
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 26f74d14da1f2bc70800000000000000
-      internalID: 8985509932993642338
+      spriteID: 74a6eecab754b1620800000000000000
+      internalID: 2745864795297049159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fixed fire ball_2
+      name: nature ball_2
       rect:
         serializedVersion: 2
-        x: 3074
+        x: 2690
         y: 0
-        width: 1537
-        height: 887
+        width: 1345
+        height: 993
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,8 +201,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a2b52ab74a97124c0800000000000000
-      internalID: -4314033220688389334
+      spriteID: 33422886856d7fc40800000000000000
+      internalID: 5546137141328880691
       vertices: []
       indices: 
       edges: []
@@ -187,7 +211,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 63075c7f74ec55f41a3dfa2b87c2923b
+    spriteID: 9b061e10cedf4f5408710380d3aaad36
     internalID: 0
     vertices: []
     indices: 
@@ -197,11 +221,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":1537.0,"y":887.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":1345.0,"y":993.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      fixed fire ball_0: 7738873687719267283
-      fixed fire ball_1: 8985509932993642338
-      fixed fire ball_2: -4314033220688389334
+      nature ball_0: -5186891335082116300
+      nature ball_1: 2745864795297049159
+      nature ball_2: 5546137141328880691
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
