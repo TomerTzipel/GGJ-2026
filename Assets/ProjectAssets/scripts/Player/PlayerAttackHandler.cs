@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerAttackHandler : MonoBehaviour
 {
+    [SerializeField] private MaskTypeEventChannel playerAttackedEC;
+    [SerializeField] private MaskTypeEventChannel playerAbilityEC;
     [SerializeField] private MaskTypeEventChannel MaskChangeEC;
     [SerializeField] private PlayerSettings settings;
     [SerializeField] private PlayerAttackHitbox hitboxPrefab;
@@ -82,6 +84,7 @@ public class PlayerAttackHandler : MonoBehaviour
         _currentAttackHitbox.CurrentMask = _currentMask;
         StartCoroutine(AttackDuration(settings.AttackDuration));
         StartCoroutine(AttackCooldown(settings.AttackCD));
+        playerAttackedEC.RaiseEvent(_currentMask);
     }
     private void FireProjectile()
     {
@@ -89,14 +92,13 @@ public class PlayerAttackHandler : MonoBehaviour
         movementHandler.CanMove = false;
         movementHandler.CanDash = false;
 
-        //Choose Projectile from dictionary
-
-        ProjectileHandler projectile = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
+        ProjectileHandler projectile = Instantiate(MaskSettings.GetDataByType(_currentMask).ProjectilePrefab, spawnPoint.position, Quaternion.identity);
         projectile.MoveDirection = _attackDirection;
         projectile.Damage = settings.Damage;
-        //projectile.CurrentMask = _currentMask;
+        
         StartCoroutine(AbilityCooldown(settings.AbilityCD));
         StartCoroutine(AbilityDuration(settings.AbilityDuration));
+        playerAbilityEC.RaiseEvent(_currentMask);
     }
 
     private void HandleMaskChange(MaskType type)

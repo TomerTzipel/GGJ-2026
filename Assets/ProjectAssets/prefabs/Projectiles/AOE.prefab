@@ -105,6 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ff662690d717204e8ed479e9f7da3c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AOEHandler
+  aoeSpawnedEC: {fileID: 11400000, guid: cbc4c61dc4d7fd74f99c41f7fed01e8f, type: 2}
   maskType: 0
   duration: 2
 --- !u!58 &240002319468990047

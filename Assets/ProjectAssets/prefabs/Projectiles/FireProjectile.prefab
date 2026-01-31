@@ -64,6 +64,22 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 7ec77b03356995440b062330635330d6, type: 2}
+    - target: {fileID: 8193341969324475392, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
+      propertyPath: m_Size.x
+      value: 0.96992123
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193341969324475392, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9914338
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193341969324475392, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.7341227
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193341969324475392, guid: cb194233580b14c4fa058ba8d731d3d7, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.009775311
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

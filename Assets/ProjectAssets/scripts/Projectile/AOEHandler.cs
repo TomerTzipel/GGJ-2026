@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class AOEHandler : MonoBehaviour
 {
+    [SerializeField] MaskTypeEventChannel aoeSpawnedEC;
     [SerializeField] MaskType maskType;
     [SerializeField] float duration;
 
@@ -11,6 +12,11 @@ public class AOEHandler : MonoBehaviour
     private void Awake()
     {
         StartCoroutine(Duration());
+    }
+
+    private void Start()
+    {
+        aoeSpawnedEC.RaiseEvent(maskType);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -7,7 +7,9 @@ public class BaseEnemy : MonoBehaviour, IHealthComponent
 {
     [Header("Events")]
     [SerializeField] protected PlayerPosition playerPosition;
+    [SerializeField] protected EnemyTypeEventChannel enemyHurtEC;
     [Header("Base Enemy Data")]
+    [SerializeField] protected MaskType _myMaskType;
     [SerializeField] private EnemyType _myEnemyType;
     [SerializeField] protected float _moveSpeed = 3f;
     [SerializeField] private float _attackRange = 2f;
@@ -59,6 +61,7 @@ public class BaseEnemy : MonoBehaviour, IHealthComponent
 
     public void TakeDamage(int damageAmount)
     {
+        enemyHurtEC.RaiseEvent(_myEnemyType);
         int calculatedHP = _currentHealth - damageAmount;
         Debug.Log($"Enemy {gameObject.name} Taking {damageAmount} damage, HP left {calculatedHP}");
 

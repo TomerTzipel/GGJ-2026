@@ -9,11 +9,7 @@ public enum MaskType { Green, Red, Blue }
 public struct MaskData
 {
     public Sprite Sprite;
-
-    public MaskData(Sprite sprite)
-    {
-        Sprite = sprite;
-    }
+    public ProjectileHandler ProjectilePrefab;
 }
 
 public class MaskSettings : MonoBehaviour
